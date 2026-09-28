@@ -1,0 +1,56 @@
+#!/bin/bash
+
+## Used functions #########################################################################
+
+confirm() {
+  read -p "$1? (y/N) : " -n 1 -e rep ; if [ "$rep" = "y" ] ; then true ; else if [ \! -z "$exit_message" ] ; then echo -e "$exit_message" ; exit 1 ; fi ; false ; fi
+}
+
+# Usage: Installs a RasPi-like light environment on ubuntu or other LiNuX distributions
+
+## Manually defines the most recent theme and icons
+### Note: This was set on 2026/09/29 and may/will evolve with time
+
+theme=pix-theme_0.1_amd64
+icons=pixtrix-icons_0.6_all+debcompat
+
+## Installs the RasPi-like light environment at the system level
+
+if confirm "Install the PIXEL themes and icons ?" "Ok, bye"
+then
+  pushd /tmp >/dev/null
+  sudo apt install -qq -y lxqt
+  wget -nv https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/$theme.deb
+  unzip $theme.deb
+  sudo cp -r $theme/usr/share/themes/PiX /usr/share/themes
+  wget -nv https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/icons/$icons.deb
+  unzip $icons.deb
+  sudo cp -r $icons/usr/share/icons/PiX* /usr/share/icons
+  /bin/rm -rf $theme.deb $theme $icons.deb $icons
+  popd >/dev/null
+  echo "Ok, packages are installed"
+fi
+
+## Echoes the manual installation documentation
+
+cat << EOF
+# Manual installation of the RasPi-like light environment
+
+- Log out of your current session.
+- On the login screen,
+  - click your username,
+  - click the small gear icon (often located at the bottom right),
+  - select LXDE.
+- Enter your password to log in.
+
+Once on the LXDE desktop:
+
+- Open the main menu (bottom left) -> Preferences -> Appearance (Customize Look and Feel).
+- Apply the following settings:
+  - Widget (Theme): Select PiX.
+  - Icon theme: Select PiXtrix.
+- Right-click the bottom taskbar -> Panel Settings -> Geometry tab -> Change the position to Top.
+- Right-click the desktop -> Desktop Preferences to apply a wallpaper.
+
+EOF
+
