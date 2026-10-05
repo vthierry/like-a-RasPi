@@ -19,9 +19,10 @@ Allows you to configure the desktop look and feel like on a Raspberry Pi.
 
 Once on the LXDE desktop:
 
+- Choose the "Marco" window manager
+- Right-click the bottom taskbar -> Panel Settings -> Geometry tab -> Change the position to Top.
+- Right-click on the main menu and choose [TO BE COMPETED lxte desktop]  
 - Open the main menu (bottom left) -> Preferences -> Appearance (Customize Look and Feel).
 - Apply the following settings:
   - Widget (Theme): Select PiX.
   - Icon theme: Select PiXtrix.
-- Right-click the bottom taskbar -> Panel Settings -> Geometry tab -> Change the position to Top.
-- Right-click the desktop -> Desktop Preferences to apply a wallpaper.
