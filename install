@@ -6,7 +6,7 @@ confirm() {
 
 # Usage: Installs a RasPi-like light environment on Ubuntu or other Linux distributions
 
-## Manually defines the most recent theme and icons
+## Defines here the most recent theme and icons
 ## - Note: This was set on 2026/09/29 and may/will evolve with time
 
 theme=pix-theme_0.1_amd64
