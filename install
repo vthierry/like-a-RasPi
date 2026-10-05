@@ -18,17 +18,19 @@ icons=pixtrix-icons_0.6_all+debcompat
 
 if confirm "Install the PIXEL themes and icons ?" "Ok, bye"
 then
-  pushd /tmp >/dev/null
+  /bin/rm -rf /tmp/install*
+  mkdir -p /tmp/install$$
+  pushd /tmp/install$$ >/dev/null
   sudo apt install -qq -y lxqt
-  wget -nv https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/$theme.deb
-  unzip $theme.deb
-  sudo cp -r $theme/usr/share/themes/PiX /usr/share/themes
-  wget -nv https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/icons/$icons.deb
-  unzip $icons.deb
-  sudo cp -r $icons/usr/share/icons/PiX* /usr/share/icons
-  /bin/rm -rf $theme.deb $theme $icons.deb $icons
+  wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/$theme.deb
+  dpkg-deb -R $theme.deb .
+  sudo cp -r usr/share/themes/PiX /usr/share/themes
+  /bin/rm -rf DEBIAN usr
+  wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/icons/$icons.deb
+  dpkg-deb -R $icons.deb .
+  sudo cp -r usr/share/icons/PiX* /usr/share/icons
   popd >/dev/null
-  echo "Ok, packages are installed"
+  /bin/rm -rf /tmp/install*
 fi
 
 ## Echoes the manual installation documentation
