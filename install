@@ -6,31 +6,26 @@ confirm() {
 
 # Usage: Installs a RasPi-like light environment on Ubuntu or other Linux distributions
 
-## Defines here the most recent theme and icons
-## - Note: This was set on 2026/09/29 and may/will evolve with time
-
-theme=pix-theme_0.1_amd64
-icons=pixtrix-icons_0.6_all+debcompat
-
-## Installs the RasPi-like light environment at the system level
-
-if confirm "Install the PIXEL themes and icons ?" "Ok, bye"
+if confirm "Install a RasPi-like light environment ?" "Ok, bye"
 then
   ### 0/ Works in a temporary directory
   /bin/rm -rf /tmp/install*
   mkdir -p /tmp/install$$
   pushd /tmp/install$$ >/dev/null
 
-  ### 1/ Installs lxqt if not yet done
-  sudo apt install -qq -y lxqt
+  ### 1/ Installs mate if not yet done
+  sudo apt install -qq -y ubuntu-mate-desktop
+  sudo locale-gen ; sudo update-locale LANG=en_US.UTF-8 ##=> Defines here the locale language
 
   ### 2/ Installs the PiX theme
+  theme=pix-theme_0.1_amd64 ##=> Most recent theme on 2026/09/29, may evolve.
   wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/$theme.deb
   dpkg-deb -R $theme.deb .
   sudo cp -r usr/share/themes/PiX /usr/share/themes
   /bin/rm -rf DEBIAN usr
 
   ### 3/ Installs PiX icons
+  icons=pixtrix-icons_0.6_all+debcompat  ##=> Most recent icon set on 2026/09/29, may evolve.
   wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/icons/$icons.deb
   dpkg-deb -R $icons.deb .
   sudo cp -r usr/share/icons/PiX* /usr/share/icons
@@ -38,5 +33,6 @@ then
   ### 00/ Cleans up
   popd >/dev/null
   /bin/rm -rf /tmp/install*
+  echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
 fi
 
