@@ -19,5 +19,5 @@
 - Enter your password to log in.
 
 Once on the desktop:
-
+- Choose gmd3 as the display manager if requested. 
 - 
