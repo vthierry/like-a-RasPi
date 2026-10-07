@@ -34,17 +34,12 @@ then
   popd >/dev/null
   /bin/rm -rf /tmp/install*
   echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
-
-  . unused_packages ##=> Defines all packages not used for this RasPi-like configuration
-  sudo apt remove -qq -y $unused_packages
-  sudo apt autoremove -qq -y
 fi
 
 if confirm "Install the home directory files ?" "Ok, bye"
 then
-  wget -q https://github.com/vthierry/like-a-RasPi/A_COMPLETER
-  unzip -o A_COMPLETER
-  rm A_COMPLETER
+  wget -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
+  unzip -o main.zip; rm main.zip
 fi
 
 

@@ -1,3 +1,9 @@
+#!/bin/bash
+
+confirm() {
+  read -p "$1? (y/N) : " -n 1 -e rep ; if [ "$rep" = "y" ] ; then true ; else if [ \! -z "$exit_message" ] ; then echo -e "$exit_message" ; exit 1 ; fi ; false ; fi
+}
+
 unused_packages='
 atril
 audacious
@@ -47,13 +53,12 @@ pavucontrol-qt
 picom
 plank
 pluma
-plymouth-theme-ubuntu-mate-logo
-plymouth-theme-ubuntu-mate-text
 qlipper
 qpdfview
 qterminal
 quassel
 redshift
+rofi
 rhythmbox
 seafile
 seafile-daemon
@@ -78,11 +83,11 @@ ubuntu-mate-wallpapers-noble
 ubuntu-mate-wallpapers-photos
 vim
 webcamoid
-wine
-winehq-stable
-wine-stable
-wine-stable-amd64
-wine-stable-i386
 xterm
-yelp
-zoom'
+yelp'
+
+if confirm "Removes all packages considered as unused (check the list in $0)" "Ok, bye"
+then
+  sudo apt remove -qq -y $unused_packages
+  sudo apt autoremove
+fi
