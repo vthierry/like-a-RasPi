@@ -3,6 +3,7 @@
  
 - The goal is to reproduced the user experience (UX) of a RasPi Desktop
   - It is based on Mate (and not lxde, technically close to RasPi desktop, but very different regarding UX).
+  - The `google-chrome` navigator is used instead of `chromium` because we experiment `chromium` bugs in this context.
   
 - Still in development; do not use unless you want to test and help :)
   
