@@ -12,8 +12,6 @@
 /.config/*
 !/.config/lxterminal
 !/.config/pcmanfm
-!/.config/rpc
-!/.config/wf-panel-pi
 /.local/*
 !/.local/share/file-manager
-!./.local/share/applications/backup.desktop
+!/.local/share/applications

@@ -13,8 +13,8 @@ then
   mkdir -p /tmp/install$$
   pushd /tmp/install$$ >/dev/null
 
-  ### 1/ Installs mate if not yet done
-  sudo apt install -qq -y ubuntu-mate-desktop wget
+  ### 1/ Installs mate and complement if not yet done
+  sudo apt install -qq -y wget ubuntu-mate-desktop compiz
   sudo locale-gen ; sudo update-locale LANG=en_US.UTF-8 ##=> Defines here the locale language
 
   ### 2/ Installs the PiX theme
@@ -33,15 +33,15 @@ then
   ### 00/ Cleans up
   popd >/dev/null
   /bin/rm -rf /tmp/install*
-  echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
 fi
 
-if confirm "Install the home directory files ?" "Ok, bye"
+if confirm "Install the home directory files ?"
 then
   wget -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
-  unzip -o main.zip; rm main.zip
+  unzip -o main.zip ; rm main.zip
 fi
 
+echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
 
 
 
