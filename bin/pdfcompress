@@ -1,0 +1,15 @@
+#!/bin/bash
+. ~/.bashrc
+needfor pdftk
+
+if [ -z "$1" -o "$1" = -h -o "$1" = --help ]
+then cat <<EOU
+Usage: pdfcompress \$pdf_file
+- Compresses a pdf file.
+EOU
+exit
+fi
+
+pdftk "$1" output "$2" compress
+
+## Note: Alternative is gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile="compressed_$1" "$1"
