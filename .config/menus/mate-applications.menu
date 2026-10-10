@@ -1032,6 +1032,9 @@
 		<Exclude>
 			<Filename>redshift-gtk.desktop</Filename>
 		</Exclude>
+		<Exclude>
+			<Filename>pcmanfm-qt.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Internet</Name>

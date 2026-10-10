@@ -1,5 +1,5 @@
 #!/bin/bash
-# This patch allows to:
+# Internal usage: This patch allows to:
 ## - avoid keyboard freeze
 /bin/rm -f ~/.config/ibus/bus/*
 ## - avoid capslock freeze

@@ -16,7 +16,11 @@ then
   ### 1/ Installs mate and complement if not yet done
   sudo apt install -qq -y wget ubuntu-mate-desktop compiz
   sudo locale-gen ; sudo update-locale LANG=en_US.UTF-8 ##=> Defines here the locale language
-
+  #### The Ubuntu present version of lxterminal is behind the Raspi OS one, this will change in a near future
+  wget -q http://fr.archive.ubuntu.com/ubuntu/pool/universe/l/lxterminal/lxterminal_0.4.1-1_amd64.deb
+  sudo dpkg -i lxterminal_0.4.1-1_amd64.deb
+  /bin/rm -f lxterminal_0.4.1-1_amd64.deb
+  
   ### 2/ Installs the PiX theme
   theme=pix-theme_0.1_amd64 ##=> Most recent theme on 2026/09/29, may evolve.
   wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/$theme.deb
