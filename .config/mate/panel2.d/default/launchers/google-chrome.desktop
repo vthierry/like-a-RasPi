@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/share/icons/HighContrast/48x48/apps/gnome-mines.png
+Name[en_US]=Web
+Exec=google-chrome
+Name=Web
+Icon=google-chrome

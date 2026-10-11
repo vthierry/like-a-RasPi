@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/share/icons/HighContrast/scalable/apps/system-file-manager.svg
+Exec=nautilus /home/vthierry/ongoing
+Icon=mate-panel-launcher
+Name[en_US]=Files
+Name=Files

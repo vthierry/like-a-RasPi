@@ -1,0 +1,17 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Thunderbird
+GenericName=Email
+Comment=Send and Receive Email
+Exec=thunderbird %u
+TryExec=thunderbird
+Icon=/usr/share/icons/HighContrast/scalable/apps-extra/thunderbird-icon.svg
+Terminal=false
+Type=Application
+StartupWMClass=Thunderbird-bin
+MimeType=message/rfc822;x-scheme-handler/mailto;
+StartupNotify=true
+Categories=Network;Email;
+X-Desktop-File-Install-Version=0.18
+Name[en_US]=Mail

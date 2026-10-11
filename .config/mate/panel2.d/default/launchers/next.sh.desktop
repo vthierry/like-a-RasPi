@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=b-next
+X-GNOME-FullName=GNOME Clocks
+Comment=Clocks for world times, plus alarms, stopwatch and a timer
+Keywords=time;timer;alarm;world clock;stopwatch;time zone;
+Exec=/home/vthierry/bin/next.sh -X
+Icon=/usr/share/icons/HighContrast/scalable/actions-extra/history-view.svg
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Utility;Clock;
+

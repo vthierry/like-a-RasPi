@@ -1,0 +1,21 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+GenericName=File Browser
+Comment=Browse the file system with the file manager
+TryExec=caja
+Icon=/usr/share/icons/HighContrast/scalable/apps/system-file-manager.svg
+Terminal=false
+Type=Application
+Categories=GTK;System;Utility;Core;
+OnlyShowIn=MATE;
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=caja
+X-MATE-Bugzilla-Component=general
+X-MATE-Bugzilla-Version=1.6.2
+X-Desktop-File-Install-Version=0.21
+Name[en_US]=File
+Name=File
+Exec=thunar Desktop
+Icon[en_US]=/usr/share/icons/HighContrast/scalable/apps/system-file-manager.svg
+Comment[en_US]=Browse the file system yeah

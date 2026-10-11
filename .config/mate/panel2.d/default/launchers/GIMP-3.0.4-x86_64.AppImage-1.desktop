@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=i-editor
+Comment=ImageEditor
+Icon=/usr/share/icons/crystalsvg/32x32/apps/gimp.png
+Terminal=false
+Type=Application
+Exec=/local/data/linux-install/GIMP-3.2.4-x86_64.AppImage
+

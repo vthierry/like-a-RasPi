@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=Gimp
+GenericName=Gimp
+Exec=/usr/bin/gimp
+Icon=/usr/share/icons/crystalsvg/32x32/apps/gimp.png
+Terminal=false
+Type=Application
+StartupNotify=true

@@ -1,0 +1,12 @@
+
+[Desktop Entry]
+Version=1.0
+Name=Gimp
+GenericName=Gimp
+Comment=ImageEditor
+Exec=/usr/bin/gimp
+Icon=/usr/share/icons/crystalsvg/32x32/apps/gimp.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Name[en_US]=imageditor

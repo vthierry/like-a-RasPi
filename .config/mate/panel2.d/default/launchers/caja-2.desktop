@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon=mate-application-generic
+Icon[en_US]=mate-application-generic
+Name[en_US]=menu
+Exec=caja /home/vthierry/bin/launchers/
+Name=menu

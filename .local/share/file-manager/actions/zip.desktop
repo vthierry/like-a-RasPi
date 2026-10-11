@@ -6,7 +6,7 @@ Profiles=default;
 
 [X-Action-Profile default]
 Terminal=true
-Exec=lxterminal --profile=xterm --title='zip' --command="zip -9qr %f.zip %F"
+Exec=zip -9qr %f.zip %F
 
 Name=Default profile
 MimeTypes=all/all;

@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Name=ssh
+Comment=Ouvre « /home/vthierry/bin/launchers/ssh »
+Icon=inode-directory
+Name[fr_FR]=ssh
+Comment[fr_FR]=Ouvre « /home/vthierry/bin/launchers/ssh »
+Icon[fr_FR]=inode-directory
+URL=file:///home/vthierry/bin/launchers/ssh
+Type=Link

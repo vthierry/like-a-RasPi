@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=view-compact-symbolic
+Name[en_US]=\s
+Exec=make -C /home/vthierry/Desktop/.Here/.\\ /.\\ /.\\ /.\\ /.\\ /.\\ /.\\ 
+Name=\s
+Icon=mate-panel-launcher

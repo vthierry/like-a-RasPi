@@ -1,0 +1,15 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Exec=xterm -geometry 120x80-1-1 -fa 'Monospace' -fs 10  -e /usr/bin/maple
+Icon=/usr/share/icons/HighContrast/32x32/apps/accessories-calculator.png
+X-DocPath=kcalc/index.html
+GenericName=Scientific Calculator
+Terminal=false
+Type=Application
+X-KDE-StartupNotify=true
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;
+Name=c-maple
+
+Name[en_US]=Wmaple
+Icon[en_US]=/usr/share/icons/HighContrast/32x32/apps/accessories-calculator.png

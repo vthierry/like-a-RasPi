@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/home/vthierry/bin/wakeup_tomorrow.sh
+Icon=/usr/share/icons/HighContrast/48x48/apps/preferences-desktop-screensaver.png
+Name=Wake up after sleep at a fixed time
+Icon[en_US]=/usr/share/icons/HighContrast/48x48/apps/preferences-desktop-screensaver.png

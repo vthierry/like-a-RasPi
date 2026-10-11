@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Link
+Icon=system-software-install
+Icon[en_US]=system-software-install
+Name[en_US]=ssh
+URL=file:///user/vthierry/home/bin/launchers/ssh/
+Name=ssh

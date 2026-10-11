@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Google speech
+GenericName=Google speech
+Comment=Speech to text web service
+Icon=/usr/share/icons/ContrastHigh/scalable/devices/audio-input-microphone.svg
+Icon[en_US]=/usr/share/icons/HighContrast/scalable/devices/audio-input-microphone.svg
+Categories=Network;
+Exec=google-chrome https://voicenote.in/live/
+Terminal=false
+Name[en_US]=speech2text
+Comment[en_US.utf8]=Speech to text web service (voir aussi https://dictation.io/?lang=fr )

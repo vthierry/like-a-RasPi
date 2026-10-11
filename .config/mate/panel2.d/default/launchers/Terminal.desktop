@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=Terminal
+Exec=mate-terminal
+Icon=/usr/share/icons/HighContrast/scalable/apps/utilities-terminal.svg
+Type=Application
+StartupNotify=true
+
+Terminal=false
+Icon[en_US]=/usr/share/icons/HighContrast/scalable/apps/utilities-terminal.svg

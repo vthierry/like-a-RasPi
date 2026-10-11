@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=make -C  /home/vthierry/Desktop/.Here/.\\ /.\\ /.\\ /.\\ /.\\ /.\\ /.\\ /
+Name=monk
+Icon=/usr/share/icons/hicolor/scalable/apps/mate-panel-separator.svg
+Icon[en_US]=/home/vthierry/Desktop/.Here/. /. /. /. /. /. /. /fantom.svg
+Name[en_US]=\s

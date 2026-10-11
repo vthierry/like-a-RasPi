@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name[en_US]=wakeup
+Exec=/home/vthierry/bin/wakeup_tomorrow.sh
+Icon=pidgin
+Icon[en_US]=pidgin
+Name=wakeup

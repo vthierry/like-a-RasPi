@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/local/data/RPM-linux/blender-2.69-linux-glibc211-x86_64/blender
+Terminal=false
+Type=Application
+Icon=pitivi
+Categories=GNOME;GTK;AudioVideo;AudioVideoEditing;
+MimeType=text/x-xptv;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=pitivi
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=0.15.2
+Name[en_US]=Blender
+Name=Blender

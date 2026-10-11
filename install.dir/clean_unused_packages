@@ -86,8 +86,11 @@ webcamoid
 xterm
 yelp'
 
-if confirm "Removes all packages considered as unused (check the list in $0)" "Ok, bye"
-then
-  sudo apt remove -qq -y $unused_packages
-  sudo apt autoremove
-fi
+for f in $unused_packages
+do 
+  if apt -qq list $f 2>/dev/null | grep '\[installed' > /dev/null
+  then sudo apt purge -qq -y $f
+  fi
+done
+sudo apt autoremove -qq -y
+

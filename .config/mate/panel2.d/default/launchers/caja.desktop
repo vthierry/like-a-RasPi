@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Thymio VPL
+TryExec=thymiovpl
+Categories=Education;Science;
+Icon=caja
+X-Desktop-File-Install-Version=0.22
+Terminal=false
+Exec=/user/vthierry/home/bin/launchers/ssh
+Icon[en_US]=caja

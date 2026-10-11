@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/usr/bin/seamonkey -edit
+Name[en_US]=t-writer
+Icon[en_US]=gnome-word
+Name=t-html
+Icon=/usr/share/icons/hicolor/48x48/apps/emacs.png
+

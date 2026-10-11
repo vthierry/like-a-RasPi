@@ -1,0 +1,17 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=Firefox
+GenericName=Web Browser
+Exec=firefox %u
+Icon=/usr/share/icons/HighContrast/scalable/apps-extra/firefox-icon.svg
+Terminal=false
+Type=Application
+StartupWMClass=Firefox-bin
+MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+Categories=Network;WebBrowser;
+X-Desktop-File-Install-Version=0.18
+Name[en_US]=Web
+Icon[en_US]=/usr/share/icons/HighContrast/scalable/apps-extra/firefox-icon.svg

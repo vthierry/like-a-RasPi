@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=xterm -T sync -geometry 80x11+20-10 -e /home/vthierry/bin/sync.sh
+Name=sync
+Icon=/usr/share/pixmaps/disks.png
+Name[en_US]=datasync

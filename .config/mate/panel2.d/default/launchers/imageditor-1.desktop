@@ -1,0 +1,15 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Name=i-editor
+Comment=ImageEditor
+Exec=/usr/bin/gimp
+Icon=gimp
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon[en_US]=gimp
+Name[en_US]=i-editor
+Comment[en_US]=ImageEditor
+

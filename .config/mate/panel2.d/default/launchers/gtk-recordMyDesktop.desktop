@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=gtk-recordMyDesktop
+Exec=gtk-recordMyDesktop
+Terminal=false
+Type=Application
+Icon=gtk-recordmydesktop.png
+Categories=AudioVideo;Recorder;
+StartupNotify=false
+X-Desktop-File-Install-Version=0.20
+Name[en_US]=screenrecord

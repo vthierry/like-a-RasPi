@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Link
+Icon=mate-panel-launcher
+Icon[en_US]=mate-panel-launcher
+URL=file:///user/vthierry/home/bin/launchers/ssh
+Name[en_US]=ssh
+Name=ssh

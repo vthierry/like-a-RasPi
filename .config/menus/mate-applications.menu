@@ -584,62 +584,6 @@
 		<Include>
 			<Filename>mozo-made-8.desktop</Filename>
 		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Filename>backup-inria.desktop</Filename>
-			<Filename>caja-browser.desktop</Filename>
-			<Filename>gcm-picker.desktop</Filename>
-			<Filename>caja-computer.desktop</Filename>
-			<Filename>ca.desrt.dconf-editor.desktop</Filename>
-			<Filename>mate-disk-usage-analyzer.desktop</Filename>
-			<Filename>org.gnome.baobab.desktop</Filename>
-			<Filename>kde4-dolphin.desktop</Filename>
-			<Filename>gparted.desktop</Filename>
-			<Filename>caja-home.desktop</Filename>
-			<Filename>gcm-import.desktop</Filename>
-			<Filename>kde4-k3b.desktop</Filename>
-			<Filename>mate-system-log.desktop</Filename>
-			<Filename>org.gnome.Logs.desktop</Filename>
-			<Filename>mate-system-monitor.desktop</Filename>
-			<Filename>mate-terminal.desktop</Filename>
-			<Filename>mate-network-scheme.desktop</Filename>
-			<Filename>mate-panel.desktop</Filename>
-			<Filename>mate-power-statistics.desktop</Filename>
-			<Filename>setroubleshoot.desktop</Filename>
-			<Filename>org.gnome.Software.desktop</Filename>
-			<Filename>gnome-software-local-file.desktop</Filename>
-			<Filename>gnome-system-monitor.desktop</Filename>
-			<Filename>xterm.desktop</Filename>
-			<Filename>org.gnome.Boxes.desktop</Filename>
-			<Filename>org.gnome.ColorProfileViewer.desktop</Filename>
-			<Filename>org.kde.discover.urlhandler.desktop</Filename>
-			<Filename>org.kde.discover.desktop</Filename>
-			<Filename>org.kde.discover-flatpak.desktop</Filename>
-			<Filename>org.kde.dolphin.desktop</Filename>
-			<Filename>colordkdeiccimporter.desktop</Filename>
-			<Filename>org.kde.k3b.desktop</Filename>
-			<Filename>org.kde.partitionmanager.desktop</Filename>
-			<Filename>org.kde.konsole.desktop</Filename>
-			<Filename>org.kde.ksysguard.desktop</Filename>
-			<Filename>org.kde.kwalletmanager5.desktop</Filename>
-			<Filename>org.gnome.Terminal.desktop</Filename>
-			<Filename>tint2.desktop</Filename>
-			<Filename>Backup-Wizard.desktop</Filename>
-			<Filename>afk-sop.desktop</Filename>
-			<Filename>blivet-gui.desktop</Filename>
-			<Filename>thunar-bulk-rename.desktop</Filename>
-			<Filename>org.kde.discover.snap.desktop</Filename>
-			<Filename>redhat-usermount.desktop</Filename>
-			<Filename>org.freedesktop.MalcontentControl.desktop</Filename>
-			<Filename>org.freedesktop.GnomeAbrt.desktop</Filename>
-			<Filename>Setup-SSH-sop.desktop</Filename>
-			<Filename>org.kde.plasma-systemmonitor.desktop</Filename>
-			<Filename>xfce4-taskmanager.desktop</Filename>
-			<Filename>thunar.desktop</Filename>
-			<Filename>xfce4-terminal.desktop</Filename>
-			<Filename>mozo-made-8.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
 		<Exclude>
 			<Filename>org.gnome.SystemMonitor.desktop</Filename>
 		</Exclude>
@@ -706,6 +650,41 @@
 		<Exclude>
 			<Filename>mate-system-log.desktop</Filename>
 		</Exclude>
+		<Include>
+			<Filename>mozo-made.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>pcmanfm.desktop</Filename>
+			<Filename>lxterminal.desktop</Filename>
+			<Filename>mozo-made.desktop</Filename>
+			<Menuname>Administration</Menuname>
+			<Menuname>Preferences</Menuname>
+			<Filename>caja-browser.desktop</Filename>
+			<Filename>caja-computer.desktop</Filename>
+			<Filename>mate-disk-usage-analyzer.desktop</Filename>
+			<Filename>mate-system-monitor.desktop</Filename>
+			<Filename>org.gnome.baobab.desktop</Filename>
+			<Filename>caja-home.desktop</Filename>
+			<Filename>mate-system-log.desktop</Filename>
+			<Filename>mate-terminal.desktop</Filename>
+			<Filename>mate-network-scheme.desktop</Filename>
+			<Filename>mate-panel.desktop</Filename>
+			<Filename>mate-power-statistics.desktop</Filename>
+			<Filename>apturl.desktop</Filename>
+			<Filename>gdebi.desktop</Filename>
+			<Filename>htop.desktop</Filename>
+			<Filename>mate-disk-image-mounter.desktop</Filename>
+			<Filename>org.mate-desktop.mate-eiciel.desktop</Filename>
+			<Filename>qps.desktop</Filename>
+			<Filename>hplj1020.desktop</Filename>
+			<Filename>org.gnome.Terminal.Preferences.desktop</Filename>
+			<Filename>tilda.desktop</Filename>
+			<Filename>tilda-dbus.desktop</Filename>
+			<Filename>debian-uxterm.desktop</Filename>
+			<Filename>debian-xterm.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>Accessories</Name>
@@ -1469,9 +1448,6 @@
 		<Exclude>
 			<Filename>org.kde.ktnef.desktop</Filename>
 		</Exclude>
-		<Include>
-			<Filename>libreoffice-math.desktop</Filename>
-		</Include>
 		<Exclude>
 			<Filename>org.kde.pimsettingexporter.desktop</Filename>
 		</Exclude>
@@ -1514,6 +1490,24 @@
 		</Exclude>
 		<Exclude>
 			<Filename>org.gnome.Evince-previewer.desktop</Filename>
+		</Exclude>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>atril.desktop</Filename>
+			<Filename>org.gnome.Evince.desktop</Filename>
+			<Filename>org.gnome.Evolution.desktop</Filename>
+			<Filename>libreoffice-startcenter.desktop</Filename>
+			<Filename>libreoffice-writer.desktop</Filename>
+			<Filename>libreoffice-calc.desktop</Filename>
+			<Filename>libreoffice-draw.desktop</Filename>
+			<Filename>libreoffice-impress.desktop</Filename>
+			<Filename>libreoffice-math.desktop</Filename>
+			<Filename>mate-dictionary.desktop</Filename>
+			<Filename>org.gnome.Evince-previewer.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+		<Exclude>
+			<Filename>libreoffice-math.desktop</Filename>
 		</Exclude>
 	</Menu>
 	<Menu>
@@ -1600,27 +1594,6 @@
 		<Include>
 			<Filename>mozo-made-16.desktop</Filename>
 		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Filename>atril.desktop</Filename>
-			<Filename>nl.hjdskes.gcolor3.desktop</Filename>
-			<Filename>simple-scan.desktop</Filename>
-			<Filename>org.gnome.Evince.desktop</Filename>
-			<Filename>eom.desktop</Filename>
-			<Filename>gimp.desktop</Filename>
-			<Filename>display-im6.q16.desktop</Filename>
-			<Filename>display-im6.desktop</Filename>
-			<Filename>org.gnome.eog.desktop</Filename>
-			<Filename>org.inkscape.Inkscape.desktop</Filename>
-			<Filename>org.kde.kruler.desktop</Filename>
-			<Filename>libreoffice-draw.desktop</Filename>
-			<Filename>mate-color-select.desktop</Filename>
-			<Filename>org.gnome.Evince-previewer.desktop</Filename>
-			<Filename>org.gnome.Shotwell.desktop</Filename>
-			<Filename>org.gnome.Shotwell-Viewer.desktop</Filename>
-			<Filename>mozo-made-1.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
 		<Exclude>
 			<Filename>mozo-made-1.desktop</Filename>
 		</Exclude>
@@ -1640,6 +1613,26 @@
 		<Exclude>
 			<Filename>screengrab.desktop</Filename>
 		</Exclude>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>gimp.desktop</Filename>
+			<Filename>org.inkscape.Inkscape.desktop</Filename>
+			<Filename>libreoffice-draw.desktop</Filename>
+			<Filename>atril.desktop</Filename>
+			<Filename>nl.hjdskes.gcolor3.desktop</Filename>
+			<Filename>simple-scan.desktop</Filename>
+			<Filename>org.gnome.Evince.desktop</Filename>
+			<Filename>eom.desktop</Filename>
+			<Filename>display-im6.q16.desktop</Filename>
+			<Filename>display-im6.desktop</Filename>
+			<Filename>org.kde.kruler.desktop</Filename>
+			<Filename>mate-color-select.desktop</Filename>
+			<Filename>org.gnome.Evince-previewer.desktop</Filename>
+			<Filename>org.gnome.Shotwell.desktop</Filename>
+			<Filename>org.gnome.Shotwell-Viewer.desktop</Filename>
+			<Filename>screengrab.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>wine-wine</Name>

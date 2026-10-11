@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Terminal
+Exec=sh -c 'cd Desktop ; mate-terminal'
+Icon=utilities-terminal
+Type=Application
+Terminal=false

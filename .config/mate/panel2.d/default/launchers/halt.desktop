@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/share/icons/oxygen/32x32/actions/system-shutdown.png
+Name[en_US]=halt
+Exec=xterm -e sh -c 'sudo /sbin/shutdown -P'
+Name=halt
+Icon=/usr/share/icons/oxygen/32x32/actions/system-shutdown.png
