@@ -653,6 +653,12 @@
 		<Include>
 			<Filename>mozo-made.desktop</Filename>
 		</Include>
+		<Include>
+			<Filename>mozo-made-1.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>mozo-made-2.desktop</Filename>
+		</Include>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>pcmanfm.desktop</Filename>
@@ -660,29 +666,19 @@
 			<Filename>mozo-made.desktop</Filename>
 			<Menuname>Administration</Menuname>
 			<Menuname>Preferences</Menuname>
-			<Filename>caja-browser.desktop</Filename>
-			<Filename>caja-computer.desktop</Filename>
 			<Filename>mate-disk-usage-analyzer.desktop</Filename>
 			<Filename>mate-system-monitor.desktop</Filename>
+			<Filename>mozo-made-2.desktop</Filename>
 			<Filename>org.gnome.baobab.desktop</Filename>
-			<Filename>caja-home.desktop</Filename>
 			<Filename>mate-system-log.desktop</Filename>
-			<Filename>mate-terminal.desktop</Filename>
-			<Filename>mate-network-scheme.desktop</Filename>
 			<Filename>mate-panel.desktop</Filename>
 			<Filename>mate-power-statistics.desktop</Filename>
 			<Filename>apturl.desktop</Filename>
-			<Filename>gdebi.desktop</Filename>
-			<Filename>htop.desktop</Filename>
 			<Filename>mate-disk-image-mounter.desktop</Filename>
 			<Filename>org.mate-desktop.mate-eiciel.desktop</Filename>
 			<Filename>qps.desktop</Filename>
 			<Filename>hplj1020.desktop</Filename>
 			<Filename>org.gnome.Terminal.Preferences.desktop</Filename>
-			<Filename>tilda.desktop</Filename>
-			<Filename>tilda-dbus.desktop</Filename>
-			<Filename>debian-uxterm.desktop</Filename>
-			<Filename>debian-xterm.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>

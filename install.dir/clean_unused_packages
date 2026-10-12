@@ -13,10 +13,12 @@ compton
 deja-dup
 engrampa
 eog
+evince
 evolution
 feathernotes
 featherpad
 file-roller
+firefox
 font-manager
 font-viewer
 gdebi
@@ -50,6 +52,7 @@ mpv
 nautilus
 onboard
 pavucontrol-qt
+pcmanfm-qt
 picom
 plank
 pluma

@@ -14,7 +14,7 @@ then
   pushd /tmp/install$$ >/dev/null
 
   ### 1/ Installs mate and complement if not yet done
-  sudo apt install -qq -y wget ubuntu-mate-desktop
+  sudo apt install -qq -y wget ubuntu-mate-desktop speedtest-cli
   sudo locale-gen ; sudo update-locale LANG=en_US.UTF-8 ##=> Defines here the locale language
   #### The Ubuntu present version of lxterminal is behind the Raspi OS one, this will change in a near future
   wget -q http://fr.archive.ubuntu.com/ubuntu/pool/universe/l/lxterminal/lxterminal_0.4.1-1_amd64.deb
@@ -44,12 +44,15 @@ fi
 
 if confirm "Install the home directory files ?"
 then
+  cd
   wget -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
   unzip -o main.zip ; rm main.zip
-  if confirm "Creates a /local/data directory to store data outside /home/$USER"
-  then
-    sudo mkdir -p /local/data ; sudo chown -R `whoami` /local/data ; sudo chgrp  -R `whoami` /local/data
-  fi
+  ./bin/findsubst -in "vthierry" -out "$USER"
+fi
+
+if confirm "Creates a /local/data directory to store data outside /home/$USER"
+then
+  sudo mkdir -p /local/data ; sudo chown -R `whoami` /local/data ; sudo chgrp  -R `whoami` /local/data
 fi
 
 echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"

@@ -49,7 +49,6 @@ EOF
     $0 $rep
   done
 else
-  echo $0 $*
   while [ \! -z "$1" ] ; do case "$1" in
 
     b ) ### Backups the home directory to the external backup disk.
@@ -67,46 +66,49 @@ else
     
     c ) ### [Hidden, because to be tested] Creates a bootable spare SD-card.
       askForDisk 'Bootable SD-card (will be erased !)'
-      if confirm "Erases and make a bootable image on $diskSource" "OK, bye"
-      then sudo dd if=/dev/mmcblk0 of=$diskSource bs=4M status=progress conv=fsync
+      if confirm "Erases and make a bootable image on $diskSource" "OK, bye" ; then
+	sudo dd if=/dev/mmcblk0 of=$diskSource bs=4M status=progress conv=fsync
       fi
       ;;
     
     i ) ### Creates an image of the SD-card on the external backup disk.
       askForSSD
-      if confirm "Creates a system image on /media/$USER/$SSD/sd-card-copy.img\n\t (this will take about half-an-hour for a 64GB card)"
-      then sudo dd if=/dev/mmcblk0 of=$SSD/backup/sd-card-copy.img bs=1M status=progress
+      if confirm "Creates a system image on /media/$USER/$SSD/sd-card-copy.img\n\t (this will take about half-an-hour for a 64GB card)" ; then
+	sudo dd if=/dev/mmcblk0 of=$SSD/backup/sd-card-copy.img bs=1M status=progress
       fi
       ;;
     
     v ) ### [Hidden] Backups the 'vthierry' user specific smartphone, although you may get inspired to adapt to your own usage.
       SmartPhone="/run/user/`id -u $USER`/gvfs/mtp:host=SAMSUNG_SAMSUNG_Android_R58Y60DJ3AF/Stockage interne"
-      if  [ \( "$USER" = "vthierry" \)   -a \( -d "$SmartPhone" \) ] ; then
-	if confirm 'Uploads smart-phone {DCIM|Pictures} for local use'
-	then
-	  bakfile ~/Desktop/medias -d
-	  for d in "$SmartPhone/DCIM/" "$SmartPhone/Pictures/"
-	  do if [ -d "$d" ] ; then $rsync --exclude=".thumbnails" "$d" ~/Desktop/medias ; fi
-	  done
-	  #### Proposes small size versions of the camera photos.
-	  if [ \! -z "`ls -A  ~/Desktop/medias/Camera/*.jpg 2>/dev/null`" ] ; then					  
-	    mkdir -p ~/Desktop/medias/Camera400
-	    mogrify -auto-orient -resize 400 -path ~/Desktop/medias/Camera400 ~/Desktop/medias/Camera/*.jpg
-	    pcmanfm /home/vthierry/Desktop/medias/Camera400 >/dev/null 2>&1 &
-	  fi  
- 	fi
-	if confirm 'Backups my music'
-	then
-	  askForSSD
-	  $rsync --delete-excluded "$SmartPhone/my-music" "$SSD"
-	fi
-	if confirm 'Backups WhatsApp media files' ; then
-	  askForSSD
-	  WhatsApp="$SmartPhone/Android/media/com.whatsapp/WhatsApp/Media/"
-	  mkdir -p  "$SSD/my-medias/WhatsApp"
-	  $rsync "$WhatsApp/WhatsApp Images/" "$SSD/my-medias/WhatsApp/Media/"
-	  $rsync "$WhatsApp/WhatsApp Audio/" "$SSD/my-medias/WhatsApp/Media/"
-	  $rsync "$WhatsApp/WhatsApp Video/" "$SSD/my-medias/WhatsApp/Media/"
+      ls "$SmartPhone"
+      if [ "$USER" = "vthierry" ] ; then
+	if [ -d "$SmartPhone" ] ; then
+	  if confirm 'Uploads smart-phone {DCIM|Pictures} for local use' ; then
+	    bakfile ~/Desktop/medias -d
+	    for d in "$SmartPhone/DCIM/" "$SmartPhone/Pictures/"
+	    do if [ -d "$d" ] ; then $rsync --exclude=".thumbnails" "$d" ~/Desktop/medias ; fi
+	    done
+	    #### Proposes small size versions of the camera photos.
+	    if [ \! -z "`ls -A  ~/Desktop/medias/Camera/*.jpg 2>/dev/null`" ] ; then					  
+	      mkdir -p ~/Desktop/medias/Camera400
+	      mogrify -auto-orient -resize 400 -path ~/Desktop/medias/Camera400 ~/Desktop/medias/Camera/*.jpg
+	      pcmanfm /home/vthierry/Desktop/medias/Camera400 >/dev/null 2>&1 &
+	    fi
+ 	  fi
+	  if confirm 'Backups my music' ; then
+	    askForSSD
+	    $rsync --delete-excluded "$SmartPhone/my-music" "$SSD"
+	  fi
+	  if confirm 'Backups WhatsApp media files' ; then
+	    askForSSD
+	    WhatsApp="$SmartPhone/Android/media/com.whatsapp/WhatsApp/Media/"
+	    mkdir -p  "$SSD/my-medias/WhatsApp"
+	    $rsync "$WhatsApp/WhatsApp Images/" "$SSD/my-medias/WhatsApp/Media/"
+	    $rsync "$WhatsApp/WhatsApp Audio/" "$SSD/my-medias/WhatsApp/Media/"
+	    $rsync "$WhatsApp/WhatsApp Video/" "$SSD/my-medias/WhatsApp/Media/"
+	  fi
+	else
+	  echo "The Smartphone file system is not connected"
 	fi
       fi
       ;;
