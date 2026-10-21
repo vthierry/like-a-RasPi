@@ -210,9 +210,6 @@
 		<Exclude>
 			<Filename>org.gnome.Meld.desktop</Filename>
 		</Exclude>
-		<Include>
-			<Filename>mozo-made-2.desktop</Filename>
-		</Include>
 		<Exclude>
 			<Filename>sqlitebrowser.desktop</Filename>
 		</Exclude>
@@ -240,6 +237,9 @@
 		</Exclude>
 		<Exclude>
 			<Filename>arduino.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-2.desktop</Filename>
 		</Exclude>
 	</Menu>
 	<Menu>
@@ -659,6 +659,15 @@
 		<Include>
 			<Filename>mozo-made-2.desktop</Filename>
 		</Include>
+		<Include>
+			<Filename>mozo-made-3.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>mozo-made-5.desktop</Filename>
+		</Include>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>pcmanfm.desktop</Filename>
@@ -679,6 +688,8 @@
 			<Filename>qps.desktop</Filename>
 			<Filename>hplj1020.desktop</Filename>
 			<Filename>org.gnome.Terminal.Preferences.desktop</Filename>
+			<Filename>ca.desrt.dconf-editor.desktop</Filename>
+			<Filename>mozo-made-1.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>
@@ -968,9 +979,6 @@
 		<Include>
 			<Filename>org.gnome.Calculator.desktop</Filename>
 		</Include>
-		<Include>
-			<Filename>mate-screenshot.desktop</Filename>
-		</Include>
 		<Exclude>
 			<Filename>info.desktop</Filename>
 		</Exclude>
@@ -1009,6 +1017,9 @@
 		</Exclude>
 		<Exclude>
 			<Filename>pcmanfm-qt.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mate-screenshot.desktop</Filename>
 		</Exclude>
 	</Menu>
 	<Menu>
@@ -1157,9 +1168,6 @@
 			<Filename>Cisco Anyconnect Secure Mobility Client.desktop</Filename>
 		</Exclude>
 		<Include>
-			<Filename>mozo-made-2.desktop</Filename>
-		</Include>
-		<Include>
 			<Filename>konqbrowser.desktop</Filename>
 		</Include>
 		<Exclude>
@@ -1258,6 +1266,9 @@
 		<Include>
 			<Filename>thunderbird.desktop</Filename>
 		</Include>
+		<Exclude>
+			<Filename>mozo-made-2.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Multimedia</Name>
@@ -1590,9 +1601,6 @@
 		<Include>
 			<Filename>mozo-made-16.desktop</Filename>
 		</Include>
-		<Exclude>
-			<Filename>mozo-made-1.desktop</Filename>
-		</Exclude>
 		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>display-im6.q16.desktop</Filename>
@@ -1609,24 +1617,21 @@
 		<Exclude>
 			<Filename>screengrab.desktop</Filename>
 		</Exclude>
+		<Include>
+			<Filename>mozo-made-1.desktop</Filename>
+		</Include>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>gimp.desktop</Filename>
 			<Filename>org.inkscape.Inkscape.desktop</Filename>
 			<Filename>libreoffice-draw.desktop</Filename>
-			<Filename>atril.desktop</Filename>
 			<Filename>nl.hjdskes.gcolor3.desktop</Filename>
 			<Filename>simple-scan.desktop</Filename>
-			<Filename>org.gnome.Evince.desktop</Filename>
 			<Filename>eom.desktop</Filename>
 			<Filename>display-im6.q16.desktop</Filename>
-			<Filename>display-im6.desktop</Filename>
 			<Filename>org.kde.kruler.desktop</Filename>
 			<Filename>mate-color-select.desktop</Filename>
-			<Filename>org.gnome.Evince-previewer.desktop</Filename>
-			<Filename>org.gnome.Shotwell.desktop</Filename>
-			<Filename>org.gnome.Shotwell-Viewer.desktop</Filename>
-			<Filename>screengrab.desktop</Filename>
+			<Filename>mozo-made-1.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>

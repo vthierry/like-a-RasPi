@@ -1,60 +1,58 @@
 #!/bin/bash
 
+# Usage: Installs a RasPi-like light environment on Ubuntu or other Linux distributions
+
 confirm() {
   read -p "$1? (y/N) : " -n 1 -e rep ; if [ "$rep" = "y" ] ; then true ; else if [ \! -z "$exit_message" ] ; then echo -e "$exit_message" ; exit 1 ; fi ; false ; fi
 }
 
-# Usage: Installs a RasPi-like light environment on Ubuntu or other Linux distributions
-
-if confirm "Install a RasPi-like light environment ?" "Ok, bye"
-then
-  ### 0/ Works in a temporary directory
-  /bin/rm -rf /tmp/install*
-  mkdir -p /tmp/install$$
-  pushd /tmp/install$$ >/dev/null
-
-  ### 1/ Installs mate and complement if not yet done
-  sudo apt install -qq -y wget ubuntu-mate-desktop speedtest-cli
-  sudo locale-gen ; sudo update-locale LANG=en_US.UTF-8 ##=> Defines here the locale language
-  #### The Ubuntu present version of lxterminal is behind the Raspi OS one, this will change in a near future
+## 1/ Performs installations if needed
+mkdir /tmp/install$$ ; cd /tmp/install$$
+### Installs mate and complement if not yet done
+sudo apt update
+for f in wget ubuntu-mate-desktop speedtest-cli
+do if ! apt -qq list $f 2>/dev/null | grep '\[installed' > /dev/null
+then sudo apt install -qq -y 
+fi ; done
+#### The Ubuntu present version of lxterminal is behind the Raspi OS one, this will change in a near future
+if [ "`lxterminal --version`" -ne "lxterminal 0.4.1" ]
+then 
   wget -q http://fr.archive.ubuntu.com/ubuntu/pool/universe/l/lxterminal/lxterminal_0.4.1-1_amd64.deb
   sudo dpkg -i lxterminal*.deb
-  /bin/rm -f lxterminal*.deb
-  #### The very nice PeaZip app is not in the apt bundle
+fi
+#### The very nice PeaZip app is not in the apt bundle
+if [ -z "`which peazip`" ]
+then
   wget -q https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip_11.3.0.LINUX.GTK2-1_amd64.deb
   sudo dpkg -i peazip*.deb
-  /bin/rm -f peazip*.deb
-  ### 2/ Installs the PiX theme
-  theme=pix-theme_0.1_amd64 ##=> Most recent theme on 2026/09/29, may evolve.
-  wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/$theme.deb
-  dpkg-deb -R $theme.deb .
-  sudo cp -r usr/share/themes/PiX /usr/share/themes
-  /bin/rm -rf DEBIAN usr
-
-  ### 3/ Installs PiX icons
-  icons=pixtrix-icons_0.6_all+debcompat  ##=> Most recent icon set on 2026/09/29, may evolve.
-  wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/icons/$icons.deb
-  dpkg-deb -R $icons.deb .
-  sudo cp -r usr/share/icons/PiX* /usr/share/icons
-
-  ### 00/ Cleans up
-  popd >/dev/null
-  /bin/rm -rf /tmp/install*
 fi
-
-if confirm "Install the home directory files ?"
+### Installs the PiX theme
+if [ \! -e "/usr/share/themes/PiX" ]
 then
-  cd
-  wget -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
-  unzip -o main.zip ; rm main.zip
-  ./bin/findsubst -in "vthierry" -out "$USER"
+  wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/themes/pix-theme_0.1_amd64.deb
+  dpkg-deb -R $theme.deb . ; sudo cp -r usr/share/themes/PiX /usr/share/themes
 fi
-
-if confirm "Creates a /local/data directory to store data outside /home/$USER"
+### Installs the PiX icons
+if [ \! -e "/usr/share/icons/PiXtrix" ]
 then
-  sudo mkdir -p /local/data ; sudo chown -R `whoami` /local/data ; sudo chgrp  -R `whoami` /local/data
+  wget -q https://github.com/b1ack0p/pixflat-theme/raw/main/packages/pool/icons/pixtrix-icons_0.6_all+debcompat.deb
+  dpkg-deb -R $icons.deb . ; sudo cp -r usr/share/icons/PiX* /usr/share/icons
 fi
 
+## 2/ Installs local files
+cd
+wget -O /tmp/install$$/main.zip -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
+unzip -o /tmp/install$$/main.zip
+./bin/findsubst -in "vthierry" -out "$USER"
+sudo cp .local/share/applications/default.list /usr/share/applications/mimeinfo.cache
+
+## 3/ Creates a /local/data directory to store data outside /home/$USER
+if [ \! -e "/local/data" ]
+then sudo mkdir -p /local/data ; sudo chown -R `whoami` /local/data ; sudo chgrp  -R `whoami` /local/data
+fi
+
+## 4/ Cleans and concludes
+/bin/rm -rf /tmp/install$$
 echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
 
 

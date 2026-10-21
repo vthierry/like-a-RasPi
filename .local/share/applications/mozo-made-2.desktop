@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name[en_US]=Speedtest
+Exec=/home/vthierry/bin/console -b speedtest --bytes
+Name=Speedtest
+Icon=network
+Icon[en_US]=network

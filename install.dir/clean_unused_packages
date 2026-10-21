@@ -1,9 +1,5 @@
 #!/bin/bash
 
-confirm() {
-  read -p "$1? (y/N) : " -n 1 -e rep ; if [ "$rep" = "y" ] ; then true ; else if [ \! -z "$exit_message" ] ; then echo -e "$exit_message" ; exit 1 ; fi ; false ; fi
-}
-
 unused_packages='
 atril
 audacious
@@ -45,7 +41,6 @@ lxqt
 magnus
 mate-calc
 mate-terminal
-mate-themes 
 meld
 meteo-qt
 mpv
@@ -67,6 +62,7 @@ seafile
 seafile-daemon
 seafile-gui
 seahorse
+screengrab
 shotwell
 smplayer
 smtube
@@ -87,10 +83,15 @@ ubuntu-mate-wallpapers-photos
 vim
 webcamoid
 xterm
+yaru-theme-gnome-shell
+yaru-theme-gtk
+yaru-theme-icon
+yaru-theme-sound
+yaru-theme-unity
 yelp'
 
 for f in $unused_packages
-do 
+do
   if apt -qq list $f 2>/dev/null | grep '\[installed' > /dev/null
   then sudo apt purge -qq -y $f
   fi
