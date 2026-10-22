@@ -4,8 +4,8 @@
 Version=1.0
 Type=Application
 Terminal=false
-Icon=/user/vthierry/home/bin/launchers/box-cloud.jpg
-Icon[en_US]=/user/vthierry/home/bin/launchers/box-cloud.jpg
+Icon=/home/vthierry/bin/launchers/box-cloud.jpg
+Icon[en_US]=/home/vthierry/bin/launchers/box-cloud.jpg
 Exec=firefox https://app.box.com
 Name[en_US]=Box
 Name=Box

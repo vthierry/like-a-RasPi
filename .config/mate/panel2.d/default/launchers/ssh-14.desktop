@@ -2,10 +2,10 @@
 [Desktop Entry]
 Version=1.0
 Name=ssh
-Comment=Open '/user/vthierry/home/Desktop/ssh'
+Comment=Open '/home/vthierry/Desktop/ssh'
 Icon=folder
 Name[en_US]=ssh
-Comment[en_US]=Open '/user/vthierry/home/Desktop/ssh'
+Comment[en_US]=Open '/home/vthierry/Desktop/ssh'
 Icon[en_US]=folder
-URL=file:///user/vthierry/home/Desktop/ssh
+URL=file:///home/vthierry/Desktop/ssh
 Type=Link

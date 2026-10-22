@@ -20,7 +20,7 @@ then
   wget -q http://fr.archive.ubuntu.com/ubuntu/pool/universe/l/lxterminal/lxterminal_0.4.1-1_amd64.deb
   sudo dpkg -i lxterminal*.deb
 fi
-#### The very nice PeaZip app is not in the apt bundle
+#### The very nice peazip close to xarchive app is not in the apt bundle
 if [ -z "`which peazip`" ]
 then
   wget -q https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip_11.3.0.LINUX.GTK2-1_amd64.deb
@@ -42,9 +42,8 @@ fi
 ## 2/ Installs local files
 cd
 wget -O /tmp/install$$/main.zip -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
-unzip -o /tmp/install$$/main.zip
+unzip -q -u /tmp/install$$/main.zip
 ./bin/findsubst -in "vthierry" -out "$USER"
-sudo cp .local/share/applications/default.list /usr/share/applications/mimeinfo.cache
 
 ## 3/ Creates a /local/data directory to store data outside /home/$USER
 if [ \! -e "/local/data" ]

@@ -5,6 +5,6 @@ Version=1.0
 Type=Link
 Icon[en_US]=/usr/share/pixmaps/caja/thumbnail_frame.png
 Icon=mate-panel-launcher
-URL=file:///user/vthierry/home/bin/launchers/
+URL=file:///home/vthierry/bin/launchers/
 Name[en_US]=Launcher
 Name=Launcher

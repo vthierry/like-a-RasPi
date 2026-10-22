@@ -7,16 +7,16 @@
 	<MergeFile type="parent">/etc/xdg/menus/mate-applications.menu</MergeFile>
 	<Menu>
 		<Name>Universal Access</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 	</Menu>
 	<Menu>
 		<Name>Development</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		<Exclude>
 			<Filename>bsh-desktop.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>eclipse-cdt.desktop</Filename>
 		</Exclude>
@@ -244,8 +244,8 @@
 	</Menu>
 	<Menu>
 		<Name>Education</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>asebaplayground.desktop</Filename>
 		</Exclude>
@@ -314,11 +314,11 @@
 	</Menu>
 	<Menu>
 		<Name>Games</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		<Exclude>
 			<Filename>sol.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>kde4-kblackbox.desktop</Filename>
 		</Exclude>
@@ -359,11 +359,11 @@
 	</Menu>
 	<Menu>
 		<Name>Other</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		<Exclude>
 			<Filename>Cisco Anyconnect Secure Mobility Client.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>caja-folder-handler.desktop</Filename>
 		</Exclude>
@@ -444,11 +444,11 @@
 	</Menu>
 	<Menu>
 		<Name>System</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		<Exclude>
 			<Filename>gpk-update-viewer.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>selinux-polgengui.desktop</Filename>
 		</Exclude>
@@ -654,19 +654,10 @@
 			<Filename>mozo-made.desktop</Filename>
 		</Include>
 		<Include>
-			<Filename>mozo-made-1.desktop</Filename>
-		</Include>
-		<Include>
 			<Filename>mozo-made-2.desktop</Filename>
 		</Include>
 		<Include>
 			<Filename>mozo-made-3.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>mozo-made-4.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>mozo-made-5.desktop</Filename>
 		</Include>
 		<Layout>
 			<Merge type="menus"/>
@@ -692,13 +683,22 @@
 			<Filename>mozo-made-1.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
+		<Exclude>
+			<Filename>mozo-made-1.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-5.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Accessories</Name>
 		<Exclude>
 			<Filename>acroread.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>kde4-akonaditray.desktop</Filename>
 		</Exclude>
@@ -1027,7 +1027,7 @@
 		<Exclude>
 			<Filename>pidgin.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>transmission-gtk.desktop</Filename>
 		</Exclude>
@@ -1182,12 +1182,6 @@
 		<Exclude>
 			<Filename>mozilla-firefox.desktop</Filename>
 		</Exclude>
-		<Include>
-			<Filename>mozo-made-4.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>mozo-made-5.desktop</Filename>
-		</Include>
 		<Exclude>
 			<Filename>org.gnome.Connections.desktop</Filename>
 		</Exclude>
@@ -1269,10 +1263,16 @@
 		<Exclude>
 			<Filename>mozo-made-2.desktop</Filename>
 		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-5.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Multimedia</Name>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>gnome-mplayer.desktop</Filename>
 		</Exclude>
@@ -1373,10 +1373,25 @@
 		<Exclude>
 			<Filename>io.github.celluloid_player.Celluloid.desktop</Filename>
 		</Exclude>
+		<Include>
+			<Filename>mozo-made-5.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>audacity.desktop</Filename>
+			<Filename>org.gnome.Cheese.desktop</Filename>
+			<Filename>com.github.wwmm.easyeffects.desktop</Filename>
+			<Filename>shotcut_shotcut.desktop</Filename>
+			<Filename>simplescreenrecorder.desktop</Filename>
+			<Filename>mate-volume-control.desktop</Filename>
+			<Filename>vlc.desktop</Filename>
+			<Filename>mozo-made-5.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>Office</Name>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>kde4-ktnef.desktop</Filename>
 		</Exclude>
@@ -1522,7 +1537,7 @@
 		<Exclude>
 			<Filename>evince.desktop</Filename>
 		</Exclude>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>eom.desktop</Filename>
 		</Exclude>
@@ -1620,8 +1635,12 @@
 		<Include>
 			<Filename>mozo-made-1.desktop</Filename>
 		</Include>
+		<Include>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Include>
 		<Layout>
 			<Merge type="menus"/>
+			<Filename>mozo-made-4.desktop</Filename>
 			<Filename>gimp.desktop</Filename>
 			<Filename>org.inkscape.Inkscape.desktop</Filename>
 			<Filename>libreoffice-draw.desktop</Filename>
@@ -1631,7 +1650,6 @@
 			<Filename>display-im6.q16.desktop</Filename>
 			<Filename>org.kde.kruler.desktop</Filename>
 			<Filename>mate-color-select.desktop</Filename>
-			<Filename>mozo-made-1.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>
@@ -1639,13 +1657,13 @@
 		<Name>wine-wine</Name>
 		<Menu>
 			<Name>wine-Programs</Name>
-			<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+			<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		</Menu>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 	</Menu>
 	<Menu>
 		<Name>chrome-apps</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 	</Menu>
 	<Include>
 		<Filename>KPatience.desktop</Filename>

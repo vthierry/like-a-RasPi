@@ -14,8 +14,8 @@
     <name>No Desktop Background</name>
     <filename>(none)</filename>
     <options>wallpaper</options>
-    <shade_type>horizontal-gradient</shade_type>
-    <pcolor>rgb(40,26,43)</pcolor>
+    <shade_type>solid</shade_type>
+    <pcolor>rgb(36,31,49)</pcolor>
     <scolor>rgb(0,0,0)</scolor>
     <artist>(none)</artist>
   </wallpaper>

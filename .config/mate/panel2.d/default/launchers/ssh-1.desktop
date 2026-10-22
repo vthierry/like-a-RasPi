@@ -2,10 +2,10 @@
 [Desktop Entry]
 Version=1.0
 Name=ssh
-Comment=Open '/user/vthierry/home/bin/launchers/ssh'
+Comment=Open '/home/vthierry/bin/launchers/ssh'
 Icon=folder
 Name[en_US]=ssh
-Comment[en_US]=Open '/user/vthierry/home/bin/launchers/ssh'
+Comment[en_US]=Open '/home/vthierry/bin/launchers/ssh'
 Icon[en_US]=folder
-URL=file:///user/vthierry/home/bin/launchers/ssh
+URL=file:///home/vthierry/bin/launchers/ssh
 Type=Link

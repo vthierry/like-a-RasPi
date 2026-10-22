@@ -7,5 +7,5 @@ Categories=Education;Science;
 Icon=caja
 X-Desktop-File-Install-Version=0.22
 Terminal=false
-Exec=/user/vthierry/home/bin/launchers/ssh
+Exec=/home/vthierry/bin/launchers/ssh
 Icon[en_US]=caja

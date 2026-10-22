@@ -4,7 +4,7 @@
 Version=1.0
 Type=Application
 Terminal=false
-Icon[en_US]=/user/vthierry/home/Desktop/.Here/. /. /. /. /. /. /. /mate-panel-separator.png
+Icon[en_US]=/home/vthierry/Desktop/.Here/. /. /. /. /. /. /. /mate-panel-separator.png
 Exec=make -C '/home/vthierry/Desktop/.Here/. /. /. /. /. /. /. /'
 Icon=mate-panel-separator
 Name[en_US]=.

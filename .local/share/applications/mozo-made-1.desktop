@@ -8,3 +8,4 @@ Exec=/home/vthierry/bin/screenshot
 Icon=accessories-image-viewer
 Icon[en_US]=accessories-image-viewer
 Name=Screenshot
+Hidden=true

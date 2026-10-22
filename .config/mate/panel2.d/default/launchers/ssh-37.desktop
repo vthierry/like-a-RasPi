@@ -5,5 +5,5 @@ Type=Link
 Icon=mate-panel-launcher
 Icon[en_US]=mate-panel-launcher
 Name[en_US]=ssh
-URL=/user/vthierry/home/bin/launchers/ssh
+URL=/home/vthierry/bin/launchers/ssh
 Name=ssh

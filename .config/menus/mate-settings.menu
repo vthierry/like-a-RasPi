@@ -7,8 +7,8 @@
 	<MergeFile type="parent">/etc/xdg/menus/mate-settings.menu</MergeFile>
 	<Menu>
 		<Name>Administration</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Include>
 			<Filename>system-config-date.desktop</Filename>
 		</Include>
@@ -71,17 +71,17 @@
 	</Menu>
 	<Menu>
 		<Name>Preferences</Name>
-		<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		<Menu>
 			<Name>System</Name>
 			<Include>
 				<Filename>matecc.desktop</Filename>
 			</Include>
-			<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+			<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		</Menu>
 		<Menu>
 			<Name>Internet and Network</Name>
-			<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+			<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 			<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		</Menu>
 		<Menu>
@@ -89,7 +89,7 @@
 			<Include>
 				<Filename>matecc.desktop</Filename>
 			</Include>
-			<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+			<AppDir>/home/vthierry/.local/share/applications</AppDir>
 			<Include>
 				<Filename>gcm-calibrate.desktop</Filename>
 			</Include>
@@ -101,7 +101,7 @@
 			</Exclude>
 			<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		</Menu>
-		<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Layout>
 			<Merge type="menus"/>
 			<Menuname>Hardware</Menuname>
@@ -183,7 +183,7 @@
 		</Include>
 		<Menu>
 			<Name>Personal</Name>
-			<DirectoryDir>/user/vthierry/home/.local/share/desktop-directories</DirectoryDir>
+			<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 			<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 		</Menu>
 		<Include>
@@ -326,7 +326,7 @@
 			<Filename>pcmanfm-qt-desktop-pref.desktop</Filename>
 		</Include>
 	</Menu>
-	<AppDir>/user/vthierry/home/.local/share/applications</AppDir>
+	<AppDir>/home/vthierry/.local/share/applications</AppDir>
 	<Include>
 		<Filename>matecc.desktop</Filename>
 	</Include>
