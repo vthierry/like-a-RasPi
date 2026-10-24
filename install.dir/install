@@ -44,6 +44,7 @@ cd
 wget -O /tmp/install$$/main.zip -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
 unzip -q -u /tmp/install$$/main.zip
 ./bin/findsubst -in "vthierry" -out "$USER"
+sudo cp ~/.config/mimeinfo.cache /usr/share/applications/mimeinfo.cache
 
 ## 3/ Creates a /local/data directory to store data outside /home/$USER
 if [ \! -e "/local/data" ]
