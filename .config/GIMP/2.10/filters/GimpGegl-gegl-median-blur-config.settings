@@ -1,17 +1,25 @@
 # settings
 
-(GimpGegl-gegl-median-blur-config "2026-10-24 14:53:51"
-    (time 1792846431)
+(GimpGegl-gegl-median-blur-config "2026-10-25 13:50:54"
+    (time 1792932654)
     (neighborhood circle)
-    (radius 77)
+    (radius 76)
     (percentile 50)
     (alpha-percentile 50)
     (abyss-policy clamp)
     (high-precision no))
-(GimpGegl-gegl-median-blur-config "2026-10-24 14:53:26"
-    (time 1792846406)
+(GimpGegl-gegl-median-blur-config "2026-10-25 13:49:37"
+    (time 1792932577)
     (neighborhood circle)
     (radius 3)
+    (percentile 50)
+    (alpha-percentile 50)
+    (abyss-policy clamp)
+    (high-precision no))
+(GimpGegl-gegl-median-blur-config "2026-10-24 14:53:51"
+    (time 1792846431)
+    (neighborhood circle)
+    (radius 77)
     (percentile 50)
     (alpha-percentile 50)
     (abyss-policy clamp)
@@ -68,14 +76,6 @@
     (time 1792436333)
     (neighborhood circle)
     (radius 36)
-    (percentile 50)
-    (alpha-percentile 50)
-    (abyss-policy clamp)
-    (high-precision no))
-(GimpGegl-gegl-median-blur-config "2026-10-17 12:04:50"
-    (time 1792231490)
-    (neighborhood circle)
-    (radius 9)
     (percentile 50)
     (alpha-percentile 50)
     (abyss-policy clamp)

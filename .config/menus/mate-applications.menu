@@ -219,19 +219,6 @@
 		<Include>
 			<Filename>mozo-made-1.desktop</Filename>
 		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Filename>emacs.desktop</Filename>
-			<Filename>emacsclient.desktop</Filename>
-			<Filename>sqlitebrowser.desktop</Filename>
-			<Filename>emacs-term.desktop</Filename>
-			<Filename>python3.12.desktop</Filename>
-			<Filename>org.gnome.Meld.desktop</Filename>
-			<Filename>arduino.desktop</Filename>
-			<Filename>org.thonny.Thonny.desktop</Filename>
-			<Filename>mozo-made-1.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
 		<Exclude>
 			<Filename>mozo-made.desktop</Filename>
 		</Exclude>
@@ -241,6 +228,28 @@
 		<Exclude>
 			<Filename>mozo-made-2.desktop</Filename>
 		</Exclude>
+		<Include>
+			<Filename>arduino-1.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>org.kicad.kicad-1.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>org.mobsya.ThymioSuite-1.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>emacs.desktop</Filename>
+			<Filename>emacsclient.desktop</Filename>
+			<Filename>emacs-term.desktop</Filename>
+			<Filename>python3.12.desktop</Filename>
+			<Filename>mozo-made.desktop</Filename>
+			<Filename>mozo-made-2.desktop</Filename>
+			<Filename>arduino-1.desktop</Filename>
+			<Filename>org.kicad.kicad-1.desktop</Filename>
+			<Filename>org.mobsya.ThymioSuite-1.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>Education</Name>
@@ -1513,11 +1522,11 @@
 		<Exclude>
 			<Filename>org.gnome.Evince-previewer.desktop</Filename>
 		</Exclude>
+		<Exclude>
+			<Filename>libreoffice-math.desktop</Filename>
+		</Exclude>
 		<Layout>
 			<Merge type="menus"/>
-			<Filename>atril.desktop</Filename>
-			<Filename>org.gnome.Evince.desktop</Filename>
-			<Filename>org.gnome.Evolution.desktop</Filename>
 			<Filename>libreoffice-startcenter.desktop</Filename>
 			<Filename>libreoffice-writer.desktop</Filename>
 			<Filename>libreoffice-calc.desktop</Filename>
@@ -1525,12 +1534,9 @@
 			<Filename>libreoffice-impress.desktop</Filename>
 			<Filename>libreoffice-math.desktop</Filename>
 			<Filename>mate-dictionary.desktop</Filename>
-			<Filename>org.gnome.Evince-previewer.desktop</Filename>
+			<Menuname>Electronics</Menuname>
 			<Merge type="files"/>
 		</Layout>
-		<Exclude>
-			<Filename>libreoffice-math.desktop</Filename>
-		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Graphics</Name>
@@ -1668,24 +1674,6 @@
 	<Include>
 		<Filename>KPatience.desktop</Filename>
 	</Include>
-	<Layout>
-		<Merge type="menus"/>
-		<Menuname>Accessories</Menuname>
-		<Menuname>chrome-apps</Menuname>
-		<Menuname>Collection</Menuname>
-		<Menuname>Education</Menuname>
-		<Menuname>Graphics</Menuname>
-		<Menuname>Internet</Menuname>
-		<Menuname>Office</Menuname>
-		<Menuname>Other</Menuname>
-		<Menuname>Development</Menuname>
-		<Menuname>Multimedia</Menuname>
-		<Menuname>System</Menuname>
-		<Menuname>Universal Access</Menuname>
-		<Menuname>wine-wine</Menuname>
-		<Filename>KPatience.desktop</Filename>
-		<Merge type="files"/>
-	</Layout>
 	<Menu>
 		<Name>Electronics</Name>
 		<Exclude>
@@ -1721,4 +1709,26 @@
 		<Name>Utilities</Name>
 		<DirectoryDir>/home/vthierry/.local/share/desktop-directories</DirectoryDir>
 	</Menu>
+	<Layout>
+		<Merge type="menus"/>
+		<Menuname>Development</Menuname>
+		<Menuname>Office</Menuname>
+		<Menuname>Internet</Menuname>
+		<Menuname>Multimedia</Menuname>
+		<Menuname>Graphics</Menuname>
+		<Menuname>Hamradio</Menuname>
+		<Menuname>Science</Menuname>
+		<Menuname>System Settings</Menuname>
+		<Menuname>Utilities</Menuname>
+		<Menuname>chrome-apps</Menuname>
+		<Menuname>Collection</Menuname>
+		<Menuname>Education</Menuname>
+		<Menuname>Other</Menuname>
+		<Menuname>Accessories</Menuname>
+		<Menuname>System</Menuname>
+		<Menuname>Universal Access</Menuname>
+		<Menuname>wine-wine</Menuname>
+		<Menuname>Electronics</Menuname>
+		<Merge type="files"/>
+	</Layout>
 </Menu>
