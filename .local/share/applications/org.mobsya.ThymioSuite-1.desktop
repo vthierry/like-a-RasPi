@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Thymio Suite
+GenericName=Integrated Development Environment
+GenericName[fr]=Environnement de développement intégré
+GenericName[de]=Integrierte Entwicklungsumgebung
+GenericName[it]=Ambiente di sviluppo integrato
+GenericName[es]=Ambiente de desarrollo integrado
+GenericName[pt]=Ambiente de desenvolvimento integrado
+Exec=/usr/bin/flatpak run --branch=master --arch=x86_64 --command=thymio-launcher org.mobsya.ThymioSuite
+Categories=
+Icon=org.mobsya.ThymioSuite
+X-Flatpak=org.mobsya.ThymioSuite
+Hidden=false
