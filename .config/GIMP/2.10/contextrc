@@ -1,11 +1,12 @@
 # GIMP user context
 
-(tool "gimp-rect-select-tool")
+(tool "gimp-move-tool")
 (paint-info "gimp-paintbrush")
+(foreground (color-rgb 0.77186311787072248 0.55807342314595376 0.25383417970245231))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "Standard")
-(pattern "Pastel Stuff")
+(pattern "3D Green")
 (gradient "FG to BG (RGB)")
 (palette "Color History")
 (font "TeX Gyre Cursor Bold")

@@ -1,10 +1,11 @@
 # GIMP gimp-perspective-clone-tool options
 
+(foreground (color-rgb 0.77186311787072248 0.55807342314595376 0.25383417970245231))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
-(pattern "Pastel Stuff")
+(pattern "3D Green")
 (palette "Color History")
-(brush-size 11)
+(brush-size 2)
 (brush-hardness 0.5)
 
 # end of gimp-perspective-clone-tool options

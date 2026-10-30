@@ -1,5 +1,6 @@
 # GIMP gimp-mypaint-brush-tool options
 
+(foreground (color-rgb 0.77186311787072248 0.55807342314595376 0.25383417970245231))
 (mybrush "Standard")
 (brush-size 51)
 (brush-hardness 0.5)

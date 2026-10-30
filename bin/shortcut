@@ -29,7 +29,7 @@ if [ -z "$1" ] ; then
 else
   case "$1" in
     F1 ) thunderbird &;;
-    F2 ) screenshot &;;
+    F2 ) kazam &;;
     F3 ) gimp &;;
     F4 ) scan &;;
     F5 ) backup &;;

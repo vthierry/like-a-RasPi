@@ -8,3 +8,4 @@ Exec=/home/vthierry/bin/screenshot
 Icon=folder-pictures
 Icon[en_US]=folder-pictures
 Name=Screenshot
+Hidden=true

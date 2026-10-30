@@ -209,3 +209,4 @@ Keywords[uk]=консоль;командна стрічка;виконати;
 Keywords[zh_CN]=console;command line;execute;终端;命令行;执行;
 Keywords[zh_TW]=console;command line;execute;終端機;終端;文字介面;執行;小黑窗;命令列
 Terminal=false
+Name[en_US]=Terminal

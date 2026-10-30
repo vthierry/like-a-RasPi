@@ -7,7 +7,7 @@ confirm() {
 }
 
 ## 1/ Performs installations if needed
-mkdir /tmp/install$$ ; cd /tmp/install$$
+mkdir /tmp/$$~ ; cd /tmp/$$~
 ### Installs mate and complement if not yet done
 sudo apt update
 for f in wget ubuntu-mate-desktop speedtest-cli
@@ -41,18 +41,12 @@ fi
 
 ## 2/ Installs local files
 cd
-wget -O /tmp/install$$/main.zip -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
-unzip -q -u /tmp/install$$/main.zip
+wget -O /tmp/$$~/main.zip -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
+unzip -q -u /tmp/$$~/main.zip
 ./bin/findsubst -in "vthierry" -out "$USER"
 sudo cp ~/.config/mimeinfo.cache /usr/share/applications/mimeinfo.cache
 
-## 3/ Creates a /local/data directory to store data outside /home/$USER
-if [ \! -e "/local/data" ]
-then sudo mkdir -p /local/data ; sudo chown -R `whoami` /local/data ; sudo chgrp  -R `whoami` /local/data
-fi
-
-## 4/ Cleans and concludes
-/bin/rm -rf /tmp/install$$
+## 3/ Concludes
 echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
 
 

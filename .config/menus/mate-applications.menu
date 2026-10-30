@@ -247,6 +247,7 @@
 			<Filename>mozo-made-2.desktop</Filename>
 			<Filename>arduino-1.desktop</Filename>
 			<Filename>org.kicad.kicad-1.desktop</Filename>
+			<Separator/>
 			<Filename>org.mobsya.ThymioSuite-1.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
@@ -602,9 +603,6 @@
 		<Exclude>
 			<Filename>Setup-SSH-sop.desktop</Filename>
 		</Exclude>
-		<Include>
-			<Filename>org.gnome.baobab.desktop</Filename>
-		</Include>
 		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
 			<Filename>org.mate-desktop.mate-eiciel.desktop</Filename>
@@ -668,6 +666,15 @@
 		<Include>
 			<Filename>mozo-made-3.desktop</Filename>
 		</Include>
+		<Exclude>
+			<Filename>mozo-made-1.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-5.desktop</Filename>
+		</Exclude>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>pcmanfm.desktop</Filename>
@@ -678,6 +685,7 @@
 			<Filename>mate-disk-usage-analyzer.desktop</Filename>
 			<Filename>mate-system-monitor.desktop</Filename>
 			<Filename>mozo-made-2.desktop</Filename>
+			<Separator/>
 			<Filename>org.gnome.baobab.desktop</Filename>
 			<Filename>mate-system-log.desktop</Filename>
 			<Filename>mate-panel.desktop</Filename>
@@ -689,17 +697,12 @@
 			<Filename>hplj1020.desktop</Filename>
 			<Filename>org.gnome.Terminal.Preferences.desktop</Filename>
 			<Filename>ca.desrt.dconf-editor.desktop</Filename>
-			<Filename>mozo-made-1.desktop</Filename>
+			<Filename>mozo-made-4.desktop</Filename>
+			<Filename>mozo-made-5.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 		<Exclude>
-			<Filename>mozo-made-1.desktop</Filename>
-		</Exclude>
-		<Exclude>
-			<Filename>mozo-made-4.desktop</Filename>
-		</Exclude>
-		<Exclude>
-			<Filename>mozo-made-5.desktop</Filename>
+			<Filename>org.gnome.baobab.desktop</Filename>
 		</Exclude>
 	</Menu>
 	<Menu>
@@ -941,50 +944,6 @@
 		<Exclude>
 			<Filename>emacs-term.desktop</Filename>
 		</Exclude>
-		<Layout>
-			<Merge type="menus"/>
-			<Filename>mate-about.desktop</Filename>
-			<Filename>bluetooth-sendto.desktop</Filename>
-			<Filename>thunar-bulk-rename.desktop</Filename>
-			<Filename>org.gnome.Calculator.desktop</Filename>
-			<Filename>org.gnome.Characters.desktop</Filename>
-			<Filename>org.gnome.clocks.desktop</Filename>
-			<Filename>org.gnome.DiskUtility.desktop</Filename>
-			<Filename>emacs.desktop</Filename>
-			<Filename>engrampa.desktop</Filename>
-			<Filename>org.gnome.FileRoller.desktop</Filename>
-			<Filename>org.gnome.Nautilus.desktop</Filename>
-			<Filename>org.gnome.font-viewer.desktop</Filename>
-			<Filename>org.kde.kruler.desktop</Filename>
-			<Filename>org.gnome.Maps.desktop</Filename>
-			<Filename>mate-calc.desktop</Filename>
-			<Filename>mate-font-viewer.desktop</Filename>
-			<Filename>mate-search-tool.desktop</Filename>
-			<Filename>ovtr.desktop</Filename>
-			<Filename>org.gnome.seahorse.Application.desktop</Filename>
-			<Filename>redshift-gtk.desktop</Filename>
-			<Filename>redshift.desktop</Filename>
-			<Filename>org.gnome.Screenshot.desktop</Filename>
-			<Filename>show.desktop</Filename>
-			<Filename>mate-screenshot.desktop</Filename>
-			<Filename>org.gnome.TextEditor.desktop</Filename>
-			<Filename>org.gnome.Weather.desktop</Filename>
-			<Filename>org.gnome.DejaDup.desktop</Filename>
-			<Filename>gucharmap.desktop</Filename>
-			<Filename>sqlitebrowser.desktop</Filename>
-			<Filename>emacsclient.desktop</Filename>
-			<Filename>emacs-term.desktop</Filename>
-			<Filename>org.gnome.FontManager.desktop</Filename>
-			<Filename>org.gnome.FontViewer.desktop</Filename>
-			<Filename>org.gtkhash.gtkhash.desktop</Filename>
-			<Filename>org.keepassxc.KeePassXC.desktop</Filename>
-			<Filename>picom.desktop</Filename>
-			<Filename>apport-gtk.desktop</Filename>
-			<Filename>info.desktop</Filename>
-			<Filename>ubuntu-mate-guide.desktop</Filename>
-			<Filename>vim.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
 		<Include>
 			<Filename>org.gnome.Calculator.desktop</Filename>
 		</Include>
@@ -996,9 +955,6 @@
 		</Include>
 		<Include>
 			<Filename>bluetooth-sendto.desktop</Filename>
-		</Include>
-		<Include>
-			<Filename>emacs.desktop</Filename>
 		</Include>
 		<Exclude>
 			<Filename>org.kde.kruler.desktop</Filename>
@@ -1030,6 +986,29 @@
 		<Exclude>
 			<Filename>mate-screenshot.desktop</Filename>
 		</Exclude>
+		<Exclude>
+			<Filename>emacs.desktop</Filename>
+		</Exclude>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>mate-about.desktop</Filename>
+			<Filename>org.xfce.mousepad.desktop</Filename>
+			<Filename>org.gnome.Calculator.desktop</Filename>
+			<Filename>peazip.desktop</Filename>
+			<Separator/>
+			<Filename>org.gnome.DiskUtility.desktop</Filename>
+			<Filename>emacs.desktop</Filename>
+			<Filename>org.kde.kruler.desktop</Filename>
+			<Filename>mate-font-viewer.desktop</Filename>
+			<Filename>mate-search-tool.desktop</Filename>
+			<Filename>mate-screenshot.desktop</Filename>
+			<Filename>emacsclient.desktop</Filename>
+			<Filename>emacs-term.desktop</Filename>
+			<Filename>apport-gtk.desktop</Filename>
+			<Filename>info.desktop</Filename>
+			<Filename>mozo-made.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>Internet</Name>
@@ -1237,26 +1216,6 @@
 		<Include>
 			<Filename>mozo-made-3.desktop</Filename>
 		</Include>
-		<Layout>
-			<Merge type="menus"/>
-			<Menuname>Cisco Secure Client</Menuname>
-			<Filename>org.kde.keditbookmarks.desktop</Filename>
-			<Filename>google-chrome.desktop</Filename>
-			<Filename>firefox.desktop</Filename>
-			<Filename>seafile.desktop</Filename>
-			<Filename>Zoom.desktop</Filename>
-			<Filename>chromium_chromium.desktop</Filename>
-			<Filename>emacs-mail.desktop</Filename>
-			<Filename>emacsclient-mail.desktop</Filename>
-			<Filename>com.google.Chrome.desktop</Filename>
-			<Filename>mozo-made-2.desktop</Filename>
-			<Filename>rclone-browser.desktop</Filename>
-			<Filename>thunderbird.desktop</Filename>
-			<Filename>thunderbird_thunderbird.desktop</Filename>
-			<Filename>transmission-gtk.desktop</Filename>
-			<Filename>mozo-made-3.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
 		<Include>
 			<Filename>firefox.desktop</Filename>
 		</Include>
@@ -1278,6 +1237,22 @@
 		<Exclude>
 			<Filename>mozo-made-5.desktop</Filename>
 		</Exclude>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>org.kde.keditbookmarks.desktop</Filename>
+			<Filename>google-chrome.desktop</Filename>
+			<Menuname>Cisco Secure Client</Menuname>
+			<Filename>emacs-mail.desktop</Filename>
+			<Filename>emacsclient-mail.desktop</Filename>
+			<Filename>com.google.Chrome.desktop</Filename>
+			<Filename>mozo-made-2.desktop</Filename>
+			<Filename>thunderbird.desktop</Filename>
+			<Filename>thunderbird_thunderbird.desktop</Filename>
+			<Filename>chromium-browser.desktop</Filename>
+			<Filename>mozo-made-4.desktop</Filename>
+			<Filename>mozo-made-5.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>Multimedia</Name>
@@ -1333,9 +1308,6 @@
 		<Exclude>
 			<Filename>xmms.desktop</Filename>
 		</Exclude>
-		<Include>
-			<Filename>mate-volume-control.desktop</Filename>
-		</Include>
 		<Exclude>
 			<Filename>org.gnome.Totem.desktop</Filename>
 		</Exclude>
@@ -1385,16 +1357,18 @@
 		<Include>
 			<Filename>mozo-made-5.desktop</Filename>
 		</Include>
+		<Exclude>
+			<Filename>mate-volume-control.desktop</Filename>
+		</Exclude>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>audacity.desktop</Filename>
 			<Filename>org.gnome.Cheese.desktop</Filename>
-			<Filename>com.github.wwmm.easyeffects.desktop</Filename>
 			<Filename>shotcut_shotcut.desktop</Filename>
-			<Filename>simplescreenrecorder.desktop</Filename>
-			<Filename>mate-volume-control.desktop</Filename>
 			<Filename>vlc.desktop</Filename>
+			<Filename>kazam.desktop</Filename>
 			<Filename>mozo-made-5.desktop</Filename>
+			<Filename>mate-volume-control.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>
@@ -1545,9 +1519,6 @@
 		</Exclude>
 		<AppDir>/home/vthierry/.local/share/applications</AppDir>
 		<Exclude>
-			<Filename>eom.desktop</Filename>
-		</Exclude>
-		<Exclude>
 			<Filename>gv.desktop</Filename>
 		</Exclude>
 		<Exclude>
@@ -1642,22 +1613,29 @@
 			<Filename>mozo-made-1.desktop</Filename>
 		</Include>
 		<Include>
-			<Filename>mozo-made-4.desktop</Filename>
+			<Filename>simple-scan-1.desktop</Filename>
+		</Include>
+		<Include>
+			<Filename>eom.desktop</Filename>
 		</Include>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>mozo-made-4.desktop</Filename>
 			<Filename>gimp.desktop</Filename>
+			<Filename>simple-scan-1.desktop</Filename>
+			<Filename>eom.desktop</Filename>
+			<Separator/>
 			<Filename>org.inkscape.Inkscape.desktop</Filename>
 			<Filename>libreoffice-draw.desktop</Filename>
 			<Filename>nl.hjdskes.gcolor3.desktop</Filename>
-			<Filename>simple-scan.desktop</Filename>
-			<Filename>eom.desktop</Filename>
 			<Filename>display-im6.q16.desktop</Filename>
 			<Filename>org.kde.kruler.desktop</Filename>
 			<Filename>mate-color-select.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
+		<Exclude>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>wine-wine</Name>
