@@ -1,6 +1,5 @@
 # GIMP gimp-text-tool options
 
-(foreground (color-rgb 0.77186311787072248 0.55807342314595376 0.25383417970245231))
 (palette "Color History")
 (font "TeX Gyre Cursor Bold")
 (font-size 12)
