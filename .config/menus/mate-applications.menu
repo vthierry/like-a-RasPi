@@ -1363,14 +1363,17 @@
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>audacity.desktop</Filename>
+			<Filename>vokoscreenNG.desktop</Filename>
 			<Filename>org.gnome.Cheese.desktop</Filename>
 			<Filename>shotcut_shotcut.desktop</Filename>
 			<Filename>vlc.desktop</Filename>
-			<Filename>kazam.desktop</Filename>
 			<Filename>mozo-made-5.desktop</Filename>
 			<Filename>mate-volume-control.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
+		<Exclude>
+			<Filename>org.gnome.Cheese.desktop</Filename>
+		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>Office</Name>

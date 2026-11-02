@@ -14,6 +14,9 @@ backup() {
 scan() {
   simple-scan
 }
+screenshot() {
+  vokoscreenNG
+}
 vpn () {
   /opt/cisco/secureclient/bin/vpnui
 }
@@ -29,7 +32,7 @@ if [ -z "$1" ] ; then
 else
   case "$1" in
     F1 ) thunderbird &;;
-    F2 ) kazam &;;
+    F2 ) screenshot &;;
     F3 ) gimp &;;
     F4 ) scan &;;
     F5 ) backup &;;
