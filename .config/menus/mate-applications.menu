@@ -1374,6 +1374,9 @@
 		<Exclude>
 			<Filename>org.gnome.Cheese.desktop</Filename>
 		</Exclude>
+		<Include>
+			<Filename>vokoscreenNG.desktop</Filename>
+		</Include>
 	</Menu>
 	<Menu>
 		<Name>Office</Name>
@@ -1621,9 +1624,14 @@
 		<Include>
 			<Filename>eom.desktop</Filename>
 		</Include>
+		<Exclude>
+			<Filename>mozo-made-4.desktop</Filename>
+		</Exclude>
+		<Include>
+			<Filename>mozo-made-3.desktop</Filename>
+		</Include>
 		<Layout>
 			<Merge type="menus"/>
-			<Filename>mozo-made-4.desktop</Filename>
 			<Filename>gimp.desktop</Filename>
 			<Filename>simple-scan-1.desktop</Filename>
 			<Filename>eom.desktop</Filename>
@@ -1634,11 +1642,9 @@
 			<Filename>display-im6.q16.desktop</Filename>
 			<Filename>org.kde.kruler.desktop</Filename>
 			<Filename>mate-color-select.desktop</Filename>
+			<Filename>mozo-made-3.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
-		<Exclude>
-			<Filename>mozo-made-4.desktop</Filename>
-		</Exclude>
 	</Menu>
 	<Menu>
 		<Name>wine-wine</Name>

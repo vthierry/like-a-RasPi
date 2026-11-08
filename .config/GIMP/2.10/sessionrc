@@ -11,7 +11,7 @@
     (size 640 480))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 686 318)
+    (position 0 32)
     (size 1918 1016)
     (open-on-exit)
     (aux-info
@@ -50,8 +50,7 @@
     (monitor 1))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 56 503)
-    (monitor 1))
+    (position 56 503))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 41 0)

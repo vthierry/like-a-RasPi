@@ -10,7 +10,7 @@ confirm() {
 mkdir /tmp/$$~ ; cd /tmp/$$~
 ### Installs mate and complement if not yet done
 sudo apt update
-for f in wget ubuntu-mate-desktop speedtest-cli vokoscreen-ng
+for f in wget ubuntu-mate-desktop speedtest-cli ydotool ydotoold simplescreenrecorder
 do if ! apt -qq list $f 2>/dev/null | grep '\[installed' > /dev/null
 then sudo apt install -qq -y 
 fi ; done

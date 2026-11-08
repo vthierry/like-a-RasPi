@@ -12,3 +12,4 @@ Type=Application
 Categories=AudioVideo;Player;Recorder;
 Keywords=Player;Capture;Audio;Video;Screencast;GStreamer;
 Name[en_US]=Vokoscreen
+NoDisplay=false

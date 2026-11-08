@@ -14,9 +14,6 @@ backup() {
 scan() {
   simple-scan
 }
-screenshot() {
-  vokoscreenNG
-}
 vpn () {
   /opt/cisco/secureclient/bin/vpnui
 }
