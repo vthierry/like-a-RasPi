@@ -1,12 +1,11 @@
 # GIMP user context
 
-(tool "gimp-text-tool")
+(tool "gimp-rect-select-tool")
 (paint-info "gimp-paintbrush")
-(foreground (color-rgb 1 1 0))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "Standard")
-(pattern "3D Green")
+(pattern "Chocolate Swirl")
 (gradient "FG to BG (RGB)")
 (palette "Color History")
 (font "TeX Gyre Cursor Bold")

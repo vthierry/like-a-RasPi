@@ -10,10 +10,10 @@
     <tag>round</tag>
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-image" checksum="70f191b18270e46801f2b4bee9dbf752">
+  <resource identifier="gimp-brush-clipboard-image" checksum="3b5c73b85ba440bcac624ddfbfa2c50a">
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-mask" checksum="e31b3a62b94abb913ef6970bdcdc506e">
+  <resource identifier="gimp-brush-clipboard-mask" checksum="6d791afde7e8ea32ee734b2c6f3c7768">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Basic/1-pixel.vbr" checksum="c84494b4a904a7c1a3548e564b073ca3">
@@ -241,7 +241,7 @@
   <resource identifier="${gimp_data_dir}/dynamics/Velocity-Tapering.gdyn" checksum="(null)">
   </resource>
 
-  <resource identifier="gimp-pattern-clipboard-image" checksum="691b7d77d555c7a837ddb3e1797b21a0">
+  <resource identifier="gimp-pattern-clipboard-image" checksum="92767bd4d2af138ecc37126a73718c5c">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/3dgreen.pat" checksum="00052731f14a5bc614daece969b368bc">
@@ -649,7 +649,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="2f7c5525241a9f50593d4ace15f3731b">
+  <resource identifier="gimp-palette-color-history" checksum="2cb1f1650872d7fa790889dcb9bcc145">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">

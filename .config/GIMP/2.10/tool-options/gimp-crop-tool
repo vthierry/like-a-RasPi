@@ -1,8 +1,7 @@
 # GIMP gimp-crop-tool options
 
-(aspect-denominator 1080)
-(aspect-numerator 1920)
-(foreground (color-rgb 1 1 0))
-(pattern "3D Green")
+(aspect-denominator 1200)
+(aspect-numerator 900)
+(pattern "Chocolate Swirl")
 
 # end of gimp-crop-tool options
