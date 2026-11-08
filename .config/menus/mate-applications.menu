@@ -1360,23 +1360,27 @@
 		<Exclude>
 			<Filename>mate-volume-control.desktop</Filename>
 		</Exclude>
-		<Layout>
-			<Merge type="menus"/>
-			<Filename>audacity.desktop</Filename>
-			<Filename>vokoscreenNG.desktop</Filename>
-			<Filename>org.gnome.Cheese.desktop</Filename>
-			<Filename>shotcut_shotcut.desktop</Filename>
-			<Filename>vlc.desktop</Filename>
-			<Filename>mozo-made-5.desktop</Filename>
-			<Filename>mate-volume-control.desktop</Filename>
-			<Merge type="files"/>
-		</Layout>
 		<Exclude>
 			<Filename>org.gnome.Cheese.desktop</Filename>
 		</Exclude>
 		<Include>
 			<Filename>vokoscreenNG.desktop</Filename>
 		</Include>
+		<Include>
+			<Filename>mozo-made-6.desktop</Filename>
+		</Include>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>audacity.desktop</Filename>
+			<Filename>org.gnome.Cheese.desktop</Filename>
+			<Filename>shotcut_shotcut.desktop</Filename>
+			<Filename>vlc.desktop</Filename>
+			<Filename>mozo-made-6.desktop</Filename>
+			<Filename>simplescreenrecorder.desktop</Filename>
+			<Filename>mozo-made-5.desktop</Filename>
+			<Filename>mate-volume-control.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
 	</Menu>
 	<Menu>
 		<Name>Office</Name>
@@ -1633,6 +1637,7 @@
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>gimp.desktop</Filename>
+			<Filename>mozo-made-3.desktop</Filename>
 			<Filename>simple-scan-1.desktop</Filename>
 			<Filename>eom.desktop</Filename>
 			<Separator/>
@@ -1642,7 +1647,6 @@
 			<Filename>display-im6.q16.desktop</Filename>
 			<Filename>org.kde.kruler.desktop</Filename>
 			<Filename>mate-color-select.desktop</Filename>
-			<Filename>mozo-made-3.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>

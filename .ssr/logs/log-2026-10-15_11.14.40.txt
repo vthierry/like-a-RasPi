@@ -1,0 +1,82 @@
+2026-10-15 11:14:40.805 (I) ==================== SSR started ====================
+2026-10-15 11:14:40.805 (I) SimpleScreenRecorder 0.4.4
+Compiled with GCC 13.2.0
+Qt: header 5.15.12, lib 5.15.13
+libavformat: header 60.16.100, lib 60.16.100
+libavcodec: header 60.31.102, lib 60.31.102
+libavutil: header 58.29.100, lib 58.29.100
+libswscale: header 7.5.100, lib 7.5.100
+2026-10-15 11:14:40.805 (I) [CPUFeatures::Detect] CPU features: mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 avx avx2 bmi1 bmi2
+2026-10-15 11:14:40.832 (I) [ALSAInput::GetSourceList] Generating source list ...
+2026-10-15 11:14:40.832 (I) [ALSAInput::GetSourceList] Found plugin: [lavrate] Rate Converter Plugin Using Libav/FFmpeg Library
+2026-10-15 11:14:40.832 (I) [ALSAInput::GetSourceList] Found plugin: [a52] Plugin to convert multichannel stream to A52 (AC3) bitstream
+2026-10-15 11:14:40.832 (I) [ALSAInput::GetSourceList] Found card: [hw:0] HDA Intel PCH
+2026-10-15 11:14:40.832 (I) [ALSAInput::GetSourceList] Found device: [hw:0,0] HDA Intel PCH: ALC3204 Analog
+2026-10-15 11:14:40.833 (I) [PulseAudioInput::GetSourceList] Generating source list ...
+2026-10-15 11:14:40.834 (I) [SourceNamesCallback] Found source: [alsa_output.pci-0000_00_1f.3.analog-stereo.monitor] Monitor of Built-in Audio Analog Stereo
+2026-10-15 11:14:40.834 (I) [SourceNamesCallback] Found source: [alsa_input.pci-0000_00_1f.3.analog-stereo] Built-in Audio Analog Stereo
+2026-10-15 11:14:40.928 (E) [PageRecord::OnStdin] Standard input read error (ioctl).
+2026-10-15 11:15:09.251 (I) [PageRecord::StartPage] Starting page ...
+2026-10-15 11:15:09.251 (I) [PageRecord::StartPage] Started page.
+2026-10-15 11:15:11.492 (I) [PageRecord::StartOutput] Starting output ...
+2026-10-15 11:15:11.492 (I) [PageRecord::StartOutput] Output file: /home/vthierry/Desktop/simplescreenrecorder-2026-10-15_11.15.11.mkv
+2026-10-15 11:15:11.492 (I) [Muxer::Init] Using format matroska (Matroska).
+2026-10-15 11:15:11.493 (I) [Muxer::AddStream] Using codec libx264 (libx264 H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10).
+2026-10-15 11:15:11.493 (I) [VideoEncoder::PrepareStream] Using pixel format nv12.
+2026-10-15 11:15:11.493 (S) [libx264 @ 0x590ac7e8e000] Application has requested 20 threads. Using a thread count greater than 16 is not recommended.
+2026-10-15 11:15:11.497 (S) [libx264 @ 0x590ac7e8e000] using SAR=1/1
+2026-10-15 11:15:11.498 (S) [libx264 @ 0x590ac7e8e000] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+2026-10-15 11:15:11.510 (S) [libx264 @ 0x590ac7e8e000] profile High, level 4.0, 4:2:0, 8-bit
+2026-10-15 11:15:11.510 (S) [libx264 @ 0x590ac7e8e000] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x3 me=dia subme=1 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=20 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:1.00
+2026-10-15 11:15:11.510 (I) [Muxer::AddStream] Using codec libvorbis (libvorbis).
+2026-10-15 11:15:11.510 (I) [BaseEncoder::EncoderThread] Encoder thread started.
+2026-10-15 11:15:11.510 (I) [AudioEncoder::PrepareStream] Using sample format f32p.
+2026-10-15 11:15:11.515 (I) [BaseEncoder::EncoderThread] Encoder thread started.
+2026-10-15 11:15:11.515 (I) [PageRecord::StartOutput] Started output.
+2026-10-15 11:15:11.515 (I) [Muxer::MuxerThread] Muxer thread started.
+2026-10-15 11:15:11.515 (I) [Synchronizer::SynchronizerThread] Synchronizer thread started.
+2026-10-15 11:15:11.520 (I) [PageRecord::StartInput] Starting input ...
+2026-10-15 11:15:11.520 (I) [X11Input::Init] Using X11 shared memory.
+2026-10-15 11:15:11.520 (I) [X11Input::Init] Detecting screen configuration ...
+2026-10-15 11:15:11.520 (I) [X11Input::Init] Screen 0: x1 = 0, y1 = 0, x2 = 1920, y2 = 1080
+2026-10-15 11:15:11.520 (I) [X11Input::InputThread] Input thread started.
+2026-10-15 11:15:11.525 (I) [PulseAudioInput::InputThread] Stream is a monitor.
+2026-10-15 11:15:11.525 (I) [PageRecord::StartInput] Started input.
+2026-10-15 11:15:11.525 (I) [PulseAudioInput::InputThread] Input thread started.
+2026-10-15 11:15:11.704 (I) [FastResampler::Resample] Resample ratio is 1.0000 (was 0.0000).
+2026-10-15 11:15:16.981 (I) [PageRecord::StopOutput] Stopping output ...
+2026-10-15 11:15:16.981 (I) [PageRecord::StopOutput] Stopped output.
+2026-10-15 11:15:16.981 (I) [PageRecord::StopInput] Stopping input ...
+2026-10-15 11:15:16.981 (I) [X11Input::~X11Input] Stopping input thread ...
+2026-10-15 11:15:16.984 (I) [X11Input::InputThread] Input thread stopped.
+2026-10-15 11:15:16.991 (I) [PulseAudioInput::~PulseAudioInput] Stopping input thread ...
+2026-10-15 11:15:16.992 (I) [PulseAudioInput::InputThread] Input thread stopped.
+2026-10-15 11:15:16.992 (I) [PageRecord::StopInput] Stopped input.
+2026-10-15 11:15:16.992 (I) [PageRecord::StopPage] Stopping page ...
+2026-10-15 11:15:16.992 (I) [Synchronizer::~Synchronizer] Stopping synchronizer thread ...
+2026-10-15 11:15:16.993 (I) [Synchronizer::SynchronizerThread] Synchronizer thread stopped.
+2026-10-15 11:15:16.993 (I) [Muxer::~Muxer] Stopping encoders ...
+2026-10-15 11:15:16.993 (I) [Muxer::~Muxer] Waiting for muxer thread to stop ...
+2026-10-15 11:15:16.994 (I) [BaseEncoder::EncoderThread] Encoder thread stopped.
+2026-10-15 11:15:16.994 (I) [BaseEncoder::EncoderThread] Encoder thread stopped.
+2026-10-15 11:15:17.010 (I) [Muxer::MuxerThread] Muxer thread stopped.
+2026-10-15 11:15:17.013 (I) [BaseEncoder::~BaseEncoder] Stopping encoder thread ...
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] frame I:1     Avg QP:14.64  size:150902
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] frame P:33    Avg QP:14.63  size:  4199
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] frame B:97    Avg QP:16.22  size:   673
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] consecutive B-frames:  0.8%  0.0%  0.0% 99.2%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] mb I  I16..4: 58.3%  6.2% 35.4%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] mb P  I16..4:  0.6%  0.0%  0.2%  P16..4:  5.4%  0.0%  0.0%  0.0%  0.0%    skip:93.9%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8:  0.5%  0.0%  0.0%  direct: 1.6%  skip:97.9%  L0:21.1% L1:70.7% BI: 8.2%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] 8x8 transform intra:5.2% inter:18.3%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] coded y,uvDC,uvAC intra: 32.8% 33.7% 29.2% inter: 0.4% 2.0% 0.2%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] i16 v,h,dc,p: 59% 40%  1%  0%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 19% 13%  8%  8%  7%  8%  5%  9%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 24% 11%  6%  6%  6%  5%  5%  7%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] i8c dc,h,v,p: 61% 22% 13%  4%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] Weighted P-Frames: Y:0.0% UV:0.0%
+2026-10-15 11:15:17.019 (S) [libx264 @ 0x590ac7e8e000] kb/s:649.97
+2026-10-15 11:15:17.024 (I) [BaseEncoder::~BaseEncoder] Stopping encoder thread ...
+2026-10-15 11:15:17.025 (S) [libvorbis @ 0x590ac82f8080] 41 frames left in the queue on closing
+2026-10-15 11:15:17.026 (I) [PageRecord::StopPage] Stopped page.
+2026-10-15 11:15:18.461 (I) ==================== SSR stopped ====================
