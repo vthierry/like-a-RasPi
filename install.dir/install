@@ -44,7 +44,7 @@ cd
 wget -O /tmp/$$~/main.zip -q https://github.com/vthierry/like-a-RasPi/archive/refs/heads/main.zip
 unzip -q -u /tmp/$$~/main.zip
 ./bin/findsubst -in "vthierry" -out "$USER"
-sudo cp ~/.config/mimeinfo.cache /usr/share/applications/mimeinfo.cache
+sudo cp ~/.config/mimeinfo.cache /usr/share/applications/mimeinfo.cach
 
 ## 3/ Concludes
 echo "Please follow https://github.com/vthierry/like-a-RasPi/blob/main/README.md"
