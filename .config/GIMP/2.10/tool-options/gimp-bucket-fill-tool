@@ -3,7 +3,6 @@
 (pattern "Chocolate Swirl")
 (brush-size 51)
 (brush-hardness 0.5)
-(fill-mode bg)
 (threshold 60.299999999999997)
 
 # end of gimp-bucket-fill-tool options
