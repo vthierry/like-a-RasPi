@@ -1,7 +1,8 @@
 # GIMP user context
 
-(tool "gimp-rect-select-tool")
+(tool "gimp-bucket-fill-tool")
 (paint-info "gimp-paintbrush")
+(foreground (color-rgb 0.17647059261798859 0.24705882370471954 0.15294118225574493))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "Standard")

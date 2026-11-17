@@ -1214,9 +1214,6 @@
 			<Filename>Zoom.desktop</Filename>
 		</Include>
 		<Include>
-			<Filename>mozo-made-3.desktop</Filename>
-		</Include>
-		<Include>
 			<Filename>firefox.desktop</Filename>
 		</Include>
 		<Include>
@@ -1237,20 +1234,24 @@
 		<Exclude>
 			<Filename>mozo-made-5.desktop</Filename>
 		</Exclude>
+		<Exclude>
+			<Filename>mozo-made-3.desktop</Filename>
+		</Exclude>
 		<Layout>
 			<Merge type="menus"/>
 			<Filename>org.kde.keditbookmarks.desktop</Filename>
 			<Filename>google-chrome.desktop</Filename>
+			<Separator/>
 			<Menuname>Cisco Secure Client</Menuname>
-			<Filename>emacs-mail.desktop</Filename>
-			<Filename>emacsclient-mail.desktop</Filename>
 			<Filename>com.google.Chrome.desktop</Filename>
 			<Filename>mozo-made-2.desktop</Filename>
 			<Filename>thunderbird.desktop</Filename>
 			<Filename>thunderbird_thunderbird.desktop</Filename>
 			<Filename>chromium-browser.desktop</Filename>
-			<Filename>mozo-made-4.desktop</Filename>
 			<Filename>mozo-made-5.desktop</Filename>
+			<Filename>devolo-dlan-cockpit.desktop</Filename>
+			<Filename>mozo-made-6.desktop</Filename>
+			<Filename>mozo-made-3.desktop</Filename>
 			<Merge type="files"/>
 		</Layout>
 	</Menu>

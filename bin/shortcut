@@ -9,7 +9,7 @@
 ## Defines commands with a suitable name, since it is grepped to show the shortcut's usage.
 
 backup() {
-  console backup
+  bash -c 'console backup'
 }
 scan() {
   simple-scan

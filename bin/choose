@@ -18,7 +18,7 @@ else
   l="`echo -e \"$2\" | awk 'NR == 1 { print "   " $0 } NR > 1 { if (length() > 0) printf("%c: %s\n",NR+95,$0); }' ; echo '0: None'`"
   n="`echo -e \"$l\" | wc -l`"
   if [ "$n" -gt 28 ] ; then echo "Too many options for the choose function, this is a programmer bug"
-  elif [ "$n" -lt 3 ] ; then echo "Nothing to choose, this is a programmer bug"
+  elif [ "$n" -lt 3 ] ; then echo -e "$l" ; echo "No option to choose"
   else
     if [ "$n" = 3 ] ; then echo -e "$l" ; if confirm "Ok with choice 'a' for $1" ; then rep=a ; else rep=0 ; fi
     else
@@ -33,6 +33,9 @@ else
     if [ "$rep" \!= 0 ] ; then
       rep="`printf \"%d\" \"'$rep\"`"
       export choice="`echo -e \"$l\" | head -n $((rep-95)) | tail -1 | sed 's/[a-z]: //'`"
+      return 0
+    else
+      return 1
     fi
   fi
 fi

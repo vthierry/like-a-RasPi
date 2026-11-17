@@ -2,6 +2,7 @@
 
 (aspect-denominator 1200)
 (aspect-numerator 900)
+(foreground (color-rgb 0.17647059261798859 0.24705882370471954 0.15294118225574493))
 (pattern "Chocolate Swirl")
 
 # end of gimp-crop-tool options
